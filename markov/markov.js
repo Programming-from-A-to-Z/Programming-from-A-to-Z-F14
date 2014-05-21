@@ -1,13 +1,25 @@
+// This is all based on Adam Parrish's great examples
+// for his ITP class RWET
+// https://github.com/aparrish/rwet-examples
 
-function MarkovGenerator(n,max) {
-  this.n = n;// # order (length) of ngrams
+
+function MarkovGenerator(n,max,del) {
+  this.delimiter = del;
+  this.n = Number(n);// # order (length) of ngrams
   this.max = max;// # maximum number of elements to generate
   this.ngrams = {}; // # ngrams as keys; next elements as values
   this.beginnings = []; // beginning ngram of every line
 }
 
 MarkovGenerator.prototype.tokenize = function(text) {
-  return text.split(" ");
+  return text.split(this.delimiter);
+};
+
+// called from generate() to join together generated elements
+// TODO: Is this joining an array of strings into a string?
+MarkovGenerator.prototype.concatenate = function(source) {
+  //return " ".join(source);
+  return source.join(this.delimiter);
 };
 
 MarkovGenerator.prototype.feed = function(text) {
@@ -22,13 +34,13 @@ MarkovGenerator.prototype.feed = function(text) {
 
   // store the first ngram of this line
   var beginning = tokens.slice(0,this.n);
-  this.beginnings.push(beginning.join(" "));
+  this.beginnings.push(beginning.join(this.delimiter));
 
   //console.log(this.beginnings);
 
   for (var i = 0; i < tokens.length-this.n; i++) {
     // I don't want it to be an array, let's make it a string again
-    var gram = tokens.slice(i,i+this.n).join(" ");
+    var gram = tokens.slice(i,i+this.n).join(this.delimiter);
     // We can leave the value as an array?
     var next = tokens[i+this.n]; // # get the element after the gram
 
@@ -45,12 +57,7 @@ MarkovGenerator.prototype.feed = function(text) {
 
 };
 
-// called from generate() to join together generated elements
-// TODO: Is this joining an array of strings into a string?
-MarkovGenerator.prototype.concatenate = function(source) {
-  //return " ".join(source);
-  return source.join(" ");
-};
+
 
 // Like python's choice
 function choice(somelist) {
@@ -65,7 +72,7 @@ MarkovGenerator.prototype.generate = function() {
   // get a random line beginning; convert to a list. 
   current = choice(this.beginnings);
 
-  var output = current.split(" ");
+  var output = current.split(this.delimiter);
 
   for (var i = 0; i < this.max; i++) {
     //console.log("Current: " + current);
@@ -75,7 +82,7 @@ MarkovGenerator.prototype.generate = function() {
       output.push(next);
       // get the last N entries of the output; we'll use this to look up
       // an ngram in the next iteration of the loop
-      current = output.slice(output.length-this.n,output.length).join(" ");
+      current = output.slice(output.length-this.n,output.length).join(this.delimiter);
     } else {
       break;
     }
