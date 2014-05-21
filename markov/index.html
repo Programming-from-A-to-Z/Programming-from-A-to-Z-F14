@@ -1,6 +1,5 @@
 <head>
   <script language="javascript" type="text/javascript" src="markov.js"></script>
-  <script language="javascript" type="text/javascript" src="markov_char.js"></script>
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
 </head>
 
@@ -13,8 +12,8 @@
   </p>
 
   <p>level:<br>
-    <input type="radio" name="level" value="char" checked="true">by character<br>
-    <input type="radio" name="level" value="word">by word
+    <input type="radio" name="level" value="char" checked="true" id='char'>by character<br>
+    <input type="radio" name="level" value="word" id = 'word'>by word
   </p>
 
   <p>
@@ -26,6 +25,10 @@
       <option value="5">5</option>
       <option value="6">6</option>
     </select>
+  </p>
+
+  <p>
+    length:<input type="text" size="2" id="length" value="500"></input>
   </p>
 
   <p>
