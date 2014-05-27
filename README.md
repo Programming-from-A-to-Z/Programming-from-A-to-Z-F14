@@ -21,3 +21,6 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ### Week 7 -- Final Project
 
+### Things to look at
+* https://github.com/soulwire/WTFEngine
+
