@@ -5,21 +5,45 @@ This course focuses on programming strategies and techniques behind procedural a
 
 
 ### Week 1 -- JavaScript Intro
+* Client side vs. Server side
+* Intro to JavaScript: basics
+* Intro to workflow: editor, server, console
+* p5.js intro
+* servi intro
+* HTML, CSS, DOM manipulation.
 
 ### Week 2 -- Regular Expressions
+* Intro to regex
+* egrep
+* meta-characters
+   * position
+   * single character
+   * quantifiers
+   * character classes
+* regex in JS
+* splitting text into tokens
+* find and replace
 
-### Week 3 -- Analysis
-* Concordance
+### Week 3 -- Text Analysis
+* Text concordance
+* Keyword finding
+* What our words say about us? 
+    * [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
+* Bayesian Analysis (spam filtering)
 
-### Week 4 -- Generation
+### Week 4 -- Text Generation
 * Markov Chains
 * Context Free Grammar
 
-### Week 5 -- Visualization
+### Week 5 -- Text Visualization
+* word clouds
+* text on curves
+* canvas vs DOM
 
 ### Week 6 -- Bonus Topics
-
-### Week 7 -- Final Project
+* TBA
+* 
+### Week 7 -- Present Final Project
 
 ### Things to look at
 * https://github.com/soulwire/WTFEngine
