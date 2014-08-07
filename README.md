@@ -42,8 +42,8 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ### Week 6 -- Bonus Topics
 * TBA
-* 
-### Week 7 -- Present Final Project
+
+### Week 7 -- Present Final Projects
 
 ### Things to look at
 * https://github.com/soulwire/WTFEngine
