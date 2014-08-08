@@ -33,6 +33,7 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ### Week 4 -- Text Generation
 * Markov Chains
+   * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
 * Context Free Grammar
 
 ### Week 5 -- Text Visualization
