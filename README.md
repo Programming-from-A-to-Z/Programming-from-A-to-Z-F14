@@ -50,3 +50,4 @@ This course focuses on programming strategies and techniques behind procedural a
 * https://github.com/soulwire/WTFEngine
 * https://github.com/nasser/pltjs
 * http://codepen.io/tholman/pen/qCnfB
+* http://werdmerge.com/
