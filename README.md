@@ -10,6 +10,7 @@ This course focuses on programming strategies and techniques behind procedural a
 * Overview / syllabus
 * Homework / final project
 * Attendance / participation
+
 ## [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
 
 
