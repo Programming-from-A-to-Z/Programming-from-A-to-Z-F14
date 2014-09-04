@@ -5,12 +5,13 @@ This course focuses on programming strategies and techniques behind procedural a
 
 
 ### Week 1 -- JavaScript Intro
-* Client side vs. Server side
-* Intro to JavaScript: basics
-* Intro to workflow: editor, server, console
-* p5.js intro
-* servi intro
-* HTML, CSS, DOM manipulation.
+##Course intro / expectations
+* Where to find course materials
+* Overview / syllabus
+* Homework / final project
+* Attendance / participation
+## [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
+
 
 ### Week 2 -- Regular Expressions
 * Intro to regex
