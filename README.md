@@ -4,17 +4,22 @@ Programming-from-A-to-Z-F14
 This course focuses on programming strategies and techniques behind procedural analysis and generation of text-based data. We'll explore topics ranging from evaluating text according to its statistical properties to the automated production of text with probabilistic methods to text visualization. Students will learn server-side and client-side JavaScript programming and develop projects that can be shared and interacted with online.  There will be weekly homework assignments as well as a final project.		  
 
 
-### Week 1 -- JavaScript Intro
-##Course intro / expectations
+## Week 1
+### Course intro / expectations
 * Where to find course materials
 * Overview / syllabus
 * Homework / final project
 * Attendance / participation
 
-## [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
+### [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
+* Basic JavaScript
+* p5.js
+* Strings in JS
+* Simple Text Analysis
+   * client-side
+   * server-side
 
-
-### Week 2 -- Regular Expressions
+## Week 2 -- Regular Expressions
 * Intro to regex
 * egrep
 * meta-characters
@@ -26,14 +31,14 @@ This course focuses on programming strategies and techniques behind procedural a
 * splitting text into tokens
 * find and replace
 
-### Week 3 -- Text Analysis
+## Week 3 -- Text Analysis
 * Text concordance
 * Keyword finding
 * What our words say about us? 
     * [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
 * Bayesian Analysis (spam filtering)
 
-### Week 4 -- Text Generation
+## Week 4 -- Text Generation
 * Markov Chains
    * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
 * Context Free Grammar
