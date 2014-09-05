@@ -106,6 +106,7 @@ This course focuses on programming strategies and techniques behind procedural a
    * [Shuffle](http://o-c-r.org/portfolio/shuffle/)
    * [Shakespeare Machine](http://o-c-r.org/portfolio/shakespeare-machine/)
 * [Darius Kazemi](http://tinysubversions.com/)
+* [Wordnik](https://www.wordnik.com/about), [Wordnik API](http://developer.wordnik.com/)
 * [WTFEngine](https://github.com/soulwire/WTFEngine)
 * [programming language design prototyping tool](https://github.com/nasser/pltjs) by Ramsey Nasser
 * [Drawing with text](http://codepen.io/tholman/pen/qCnfB)
