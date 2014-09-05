@@ -19,6 +19,10 @@ This course focuses on programming strategies and techniques behind procedural a
    * client-side
    * server-side
 
+### Assignment
+* [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
+* Develop a program that "writes" or "reads" (or both) text, i.e. generate your own text from a source text (or via some other generative method) or create your own method for analyzing the statistical properties (or, dare I say, meaning) of an input text.  You can use node to process a text file or you can get user input in a browser.  Feel free to play around with visual ideas for displaying text with p5.js.
+
 ## Week 2 -- Regular Expressions
 * Intro to regex
 * egrep
