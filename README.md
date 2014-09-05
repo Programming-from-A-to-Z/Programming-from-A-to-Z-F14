@@ -53,15 +53,15 @@ This course focuses on programming strategies and techniques behind procedural a
    * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
 * Context Free Grammar
 
-### Week 5 - Text Visualization - Oct 3
+## Week 5 - Text Visualization - Oct 3
 * word clouds
 * text on curves
 * canvas vs DOM
 
-### Week 6 - Bonus Topics - Oct 10
+## Week 6 - Bonus Topics - Oct 10
 * TBA
 
-### Week 7 - Present Final Projects - Oct 17
+## Week 7 - Present Final Projects - Oct 17
 
 ## Resources
 * [p5.js](http://p5js.org)
