@@ -79,18 +79,18 @@ This course focuses on programming strategies and techniques behind procedural a
 * [A re-introduction to JS by Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 * [JavaScript 101 from JQuery](https://learn.jquery.com/javascript-101/)
 
-###Reference
+## Reference
 * [JavaScript: The Definitive Guide](http://shop.oreilly.com/product/9780596000486.do)
 * [Eloquent JavaScript](http://eloquentjavascript.net/contents.html), Marijn Haverbeke
 * [Beginning JavaScript](http://www.amazon.com/Beginning-JavaScript-Paul-Wilton/dp/0470525932), Paul Wilton and Jeremy McPeak
 
-###Tools
+## Tools
 * Checking code: [JSLint](http://www.jslint.com/) / [JSHint](http://www.jshint.com)
 * Browser debugging: Chrome Developer Tools ([tutorial](https://developer.chrome.com/extensions/tut_debugging)) / Firebug ([tutorial](http://www.developerfusion.com/article/139949/debugging-javascript-with-firebug/))
 * Mobile debugging [jsconsole.com](http://jsconsole.com)
 * Sharing code snippets (useful for asking questions): [gist.github.com](http://gist.github.com)
 
-### Text-Based Projects
+## Text-Based Projects
 * https://github.com/soulwire/WTFEngine
 * https://github.com/nasser/pltjs
 * http://codepen.io/tholman/pen/qCnfB
@@ -100,3 +100,10 @@ This course focuses on programming strategies and techniques behind procedural a
     * http://secretlifeofpronouns.com/exercise/Bottle/
     * http://secretlifeofpronouns.com/exercise/Bottle/BottleResults.php
     * http://secretlifeofpronouns.com/exercise/Bottle/feedback.php
+
+## Requirements
+* You are required to attend all class meetings and submit all weekly assignments and a final project.
+* Grading (pass/fail) will be based on a combination of factors:
+  * Attendance, participation in class discussion, and engagement in other students' projects (25%)
+  * Quality of weekly assignments (50%) 
+  * Final Project (25%)
