@@ -100,7 +100,7 @@ This course focuses on programming strategies and techniques behind procedural a
 * Mobile debugging [jsconsole.com](http://jsconsole.com)
 * Sharing code snippets (useful for asking questions): [gist.github.com](http://gist.github.com)
 
-## Text-Based Projects
+## References
 * [Darius Kazemi](http://tinysubversions.com/)
 * [WTFEngine](https://github.com/soulwire/WTFEngine)
 * [programming language design prototyping tool](https://github.com/nasser/pltjs) by Ramsey Nasser
@@ -109,6 +109,14 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Werdmerge](http://werdmerge.com/)
 * [Visualizing Fiction's Structure](https://www.youtube.com/watch?v=f41U936WqPM), Lynn Cherny
 * [Secretlife of Pronouns](http://secretlifeofpronouns.com/)
+* [Gnoetry](http://www.beardofbees.com/gnoetry.html)
+* [Jackson Mac Low](http://epc.buffalo.edu/authors/maclow/)
+* [Grand Text Auto](http://grandtextauto.org/)
+* [Nick Montfort](http://nickm.com/)
+* [Wordnet](http://wordnet.princeton.edu/)
+* [Wordcount](http://www.number27.org/wordcount)
+* [Rita](http://rednoise.org/rita/)
+* [Allison Parrish](http://www.decontextualize.com/)
 
 ## Requirements
 * You are required to attend all class meetings and submit all weekly assignments and a final project.
