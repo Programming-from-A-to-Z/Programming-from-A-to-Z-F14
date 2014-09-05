@@ -1,16 +1,14 @@
-Programming-from-A-to-Z-F14
-===========================
+# Programming from A to Z, Spring 2014
 
 This course focuses on programming strategies and techniques behind procedural analysis and generation of text-based data. We'll explore topics ranging from evaluating text according to its statistical properties to the automated production of text with probabilistic methods to text visualization. Students will learn server-side and client-side JavaScript programming and develop projects that can be shared and interacted with online.  There will be weekly homework assignments as well as a final project.
 
-#Info
+## Info
 - Daniel Shiffman, Fridays, 12:10pm-2:40pm
 - [Course Notes](http://shiffman.net/teaching/a2z/)
 - All example code in this repo.
 
-#Mailing List
+## Mailing List
 * [Join ITP A2Z Google Group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/).
-
 
 ## Week 1
 ### Course intro / expectations
@@ -65,14 +63,14 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ### Week 7 -- Present Final Projects
 
-#Resources
+## Resources
 * [p5.js](http://p5js.org)
 * [p5.js on GitHub](https://github.com/lmccart/p5.js)
 * [p5.js CDN](http://cdnjs.com/libraries/p5.js)
 * [Node](http://nodejs.org/)
 * [Servi](https://github.com/antiboredom/servi.js)
 
-###Learning / Intro
+## Learning / Intro
 * [CodeAcademy: JavaScript](http://www.codecademy.com/tracks/javascript)
 * [How to learn JavaScript properly](http://javascriptissexy.com/how-to-learn-javascript-properly/)
 * [JavaScript the right way](http://www.jstherightway.org/)
