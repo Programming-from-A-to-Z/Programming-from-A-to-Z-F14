@@ -1,24 +1,30 @@
+var fleschReport;
+var input;
 
-// We can get command line arguments in a node program
-// Here we're checking to make sure we've typed three things (the last being the filename)
-if (process.argv.length < 3) {
-  console.log('Oops, you forgot to pass in a text file.');
-  process.exit(1);
+function setup() {
+  noCanvas();
+
+  // A text area
+  input = createElement("textarea","Enter some text.");
+  input.attribute("rows",10);
+  input.attribute("cols",100);
+
+  // A button
+  var button = createButton("Compute the Flesch Index!");
+  button.mousePressed(flesch);
+    
+  // An HTML Element for the resulting text
+  fleschReport = createP("");
 }
 
-// The 'fs' (file system) module allows us to read and write files
-// http://nodejs.org/api/fs.html
-var fs = require('fs');
-var filename = process.argv[2];
-
-// Read the file as utf8 and process the data in the function analyze
-fs.readFile(filename, 'utf8', flesch);
-
-function flesch(err, data) {
-  if (err) {
-    throw err;
-  }
-
+function flesch() {
+  // What has the user entered?
+  var data = input.value();
+  // Check to see if they entered something
+  var len = data.length;
+  if (data.length == '0') {
+    alert("Enter something!");
+  } else {
     var totalSyllables = 0;
     var totalSentences = 0;
     var totalWords     = 0;
@@ -47,13 +53,14 @@ function flesch(err, data) {
     // Write Report
     var report = "";
     
-    report += "Total Syllables: " + totalSyllables + "\n";
-    report += "Total Words    : " + totalWords + "\n";
-    report += "Total Sentences: " + totalSentences + "\n";
-    report += "Flesch Index   : " + flesch + "\n";
-    console.log(report);
-  }
+    report += "Total Syllables: " + totalSyllables + "<br/>";
+    report += "Total Words    : " + totalWords + "<br/>";
+    report += "Total Sentences: " + totalSentences + "<br/>";
+    report += "Flesch Index   : " + flesch + "\n";   
 
+    fleschReport.html(report);
+  }
+}
 
 // A method to count the number of syllables in a word
 // Pretty basic, just based off of the number of vowels
@@ -93,3 +100,11 @@ function isVowel(c) {
   else if ((c == 'y') || (c == 'Y')) { return true;  }
   else                               { return false; }
 }
+
+function noCanvas() {
+  var c = document.getElementById('defaultCanvas');
+  if (c) {
+    c.parentNode.removeChild(c);
+  }
+}
+

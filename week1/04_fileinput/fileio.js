@@ -20,4 +20,16 @@ function analyze(err, data) {
   }
   console.log('OK: ' + filename);
   console.log(data);
+
+  
+  // If we wanted to write a file out
+  fs.writeFile("output.txt", data, output);
+  function output(err) {
+    if (err) {
+      throw err;
+    }
+    console.log("The new file was saved!");
+  }; 
+
 }
+
