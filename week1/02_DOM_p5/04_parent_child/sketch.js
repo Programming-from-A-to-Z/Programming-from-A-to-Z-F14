@@ -5,12 +5,13 @@ function setup() {
   var link = createA("http://i.imgur.com/WXaUlrK.gif","We can also create a link this way.")
   var canvas = createCanvas(600, 400);
 
-  // Here we call methods of each element to set the position and id, try changing these values.
-  // Use the inspector to look at the HTML generated from this code when you load the sketch in your browser.
+  // We are letting the elements float (no absolute positioning)
+  // Also ids and classes
   text.id("apple");
   link.id("pear");
   canvas.class("lemon");
-
+   
+  // We can put the link element inside the paragraph one with child()
   text.child("pear");
 }
 

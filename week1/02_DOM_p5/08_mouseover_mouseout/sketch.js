@@ -12,15 +12,15 @@ function setup() {
 
   // Make the canvas
   canvas = createCanvas(400, 400);
-  // Make the image
+  // Make an HTML image
   img = createImg("http://th07.deviantart.net/fs70/PRE/i/2011/260/3/5/dash_hooray_by_rainbowcrab-d49xk0d.png");
 
   // Here we call methods of HTML Image element to set the position and size.
-  img.position(190, 50);
+  img.position(410, 40);
   img.size(200, AUTO);
    
   // Set the position of the canvas
-  canvas.position(300, 50);
+  canvas.position(0, 40);
   // Attach listeners for mouse events related to canvas
   canvas.mouseOver(uniHide);
   canvas.mouseOut(uniShow);

@@ -1,8 +1,5 @@
-// Creating other HTML elements.
-
 
 function setup() {
-
 
   // We are still calling createCanvas like in the past, but now we are storing the result as a variable.
   // This way we can call methods of the element, to set the position for instance.
@@ -13,7 +10,9 @@ function setup() {
   // Here we call methods of each element to set the position and id, try changing these values.
   // Use the inspector to look at the HTML generated from this code when you load the sketch in your browser.
   text.position(50, 50);
+  text.id("apple");
   canvas.position(300, 50);
+  canvas.id("pear");
 
 }
 
