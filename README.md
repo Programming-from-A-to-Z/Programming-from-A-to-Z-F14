@@ -35,6 +35,7 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ### Assignment
 * [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
+* [Watch](https://www.youtube.com/watch?v=PGsQwAu3PzU) or [read](http://secretlifeofpronouns.com/book.php) The Secret Life of Pronouns.
 * Develop a program that "writes" or "reads" (or both) text, i.e. generate your own text from a source text (or via some other generative method) or create your own method for analyzing the statistical properties (or, dare I say, meaning) of an input text.  You can use node to process a text file or you can get user input in a browser.  Feel free to play around with visual ideas for displaying text with p5.js.
 
 
@@ -100,15 +101,14 @@ This course focuses on programming strategies and techniques behind procedural a
 * Sharing code snippets (useful for asking questions): [gist.github.com](http://gist.github.com)
 
 ## Text-Based Projects
-* https://github.com/soulwire/WTFEngine
-* https://github.com/nasser/pltjs
-* http://codepen.io/tholman/pen/qCnfB
-* http://werdmerge.com/
-* https://www.youtube.com/watch?v=f41U936WqPM
-* Bottle exercise
-    * http://secretlifeofpronouns.com/exercise/Bottle/
-    * http://secretlifeofpronouns.com/exercise/Bottle/BottleResults.php
-    * http://secretlifeofpronouns.com/exercise/Bottle/feedback.php
+* [Darius Kazemi](http://tinysubversions.com/)
+* [WTFEngine](https://github.com/soulwire/WTFEngine)
+* [programming language design prototyping tool](https://github.com/nasser/pltjs) by Ramsey Nasser
+* [Drawing with text](http://codepen.io/tholman/pen/qCnfB)
+* [Ariel Malka](http://ariel.chronotext.org/)
+* [Werdmerge](http://werdmerge.com/)
+* [Visualizing Fiction's Structure](https://www.youtube.com/watch?v=f41U936WqPM), Lynn Cherny
+* [Secretlife of Pronouns](http://secretlifeofpronouns.com/)
 
 ## Requirements
 * You are required to attend all class meetings and submit all weekly assignments and a final project.
