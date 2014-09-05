@@ -101,6 +101,10 @@ This course focuses on programming strategies and techniques behind procedural a
 * Sharing code snippets (useful for asking questions): [gist.github.com](http://gist.github.com)
 
 ## References
+* Office of Creative Research
+   * [Moveable Type](http://o-c-r.org/portfolio/moveable-type/)
+   * [Shuffle](http://o-c-r.org/portfolio/shuffle/)
+   * [Shakespeare Machine](http://o-c-r.org/portfolio/shakespeare-machine/)
 * [Darius Kazemi](http://tinysubversions.com/)
 * [WTFEngine](https://github.com/soulwire/WTFEngine)
 * [programming language design prototyping tool](https://github.com/nasser/pltjs) by Ramsey Nasser
