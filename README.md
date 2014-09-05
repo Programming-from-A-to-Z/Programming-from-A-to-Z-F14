@@ -105,6 +105,7 @@ This course focuses on programming strategies and techniques behind procedural a
    * [Moveable Type](http://o-c-r.org/portfolio/moveable-type/)
    * [Shuffle](http://o-c-r.org/portfolio/shuffle/)
    * [Shakespeare Machine](http://o-c-r.org/portfolio/shakespeare-machine/)
+* [ITP Course Generator](http://static.decontextualize.com/toys/next_semester) by Allison Parrish
 * [Darius Kazemi](http://tinysubversions.com/)
 * [Wordnik](https://www.wordnik.com/about), [Wordnik API](http://developer.wordnik.com/)
 * [WTFEngine](https://github.com/soulwire/WTFEngine)
