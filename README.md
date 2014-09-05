@@ -25,6 +25,14 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Simple Text Analysis](http://shiffman.net/teaching/a2z/week1/#analysis)
 * [Back to p5.js, processing text from a user](http://shiffman.net/teaching/a2z/week1/#p5analysis)
 
+### Examples
+* [Processing to p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/00_Processing_to_p5.js)
+* [OOP in JS](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/01_objects_in_JS)
+* [DOM manipulation in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/02_DOM_p5)
+* [Strings in JS](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/03_Strings)
+* [File I/O in Node](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/04_fileinput)
+* [Process user text in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/05_p5_text)
+
 ### Assignment
 * [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
 * Develop a program that "writes" or "reads" (or both) text, i.e. generate your own text from a source text (or via some other generative method) or create your own method for analyzing the statistical properties (or, dare I say, meaning) of an input text.  You can use node to process a text file or you can get user input in a browser.  Feel free to play around with visual ideas for displaying text with p5.js.
