@@ -10,7 +10,8 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Mailing List
 * [Join ITP A2Z Google Group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/).
 
-## Week 1
+
+## Week 1 - Sep 5
 ### Course intro / expectations
 * Where to find course materials
 * Overview / syllabus
@@ -29,7 +30,8 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
 * Develop a program that "writes" or "reads" (or both) text, i.e. generate your own text from a source text (or via some other generative method) or create your own method for analyzing the statistical properties (or, dare I say, meaning) of an input text.  You can use node to process a text file or you can get user input in a browser.  Feel free to play around with visual ideas for displaying text with p5.js.
 
-## Week 2 -- Regular Expressions
+
+## Week 2 - Regular Expressions - Sep 12
 * Intro to regex
 * egrep
 * meta-characters
@@ -41,27 +43,27 @@ This course focuses on programming strategies and techniques behind procedural a
 * splitting text into tokens
 * find and replace
 
-## Week 3 -- Text Analysis
+## Week 3 - Text Analysis - Sep 19
 * Text concordance
 * Keyword finding
 * What our words say about us? 
     * [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
 * Bayesian Analysis (spam filtering)
 
-## Week 4 -- Text Generation
+## Week 4 - Text Generation - DATE TBA
 * Markov Chains
    * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
 * Context Free Grammar
 
-### Week 5 -- Text Visualization
+### Week 5 - Text Visualization - Oct 3
 * word clouds
 * text on curves
 * canvas vs DOM
 
-### Week 6 -- Bonus Topics
+### Week 6 - Bonus Topics - Oct 10
 * TBA
 
-### Week 7 -- Present Final Projects
+### Week 7 - Present Final Projects - Oct 17
 
 ## Resources
 * [p5.js](http://p5js.org)
