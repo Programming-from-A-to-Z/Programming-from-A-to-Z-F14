@@ -17,12 +17,13 @@ This course focuses on programming strategies and techniques behind procedural a
 * Homework / final project
 
 ### [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
-* Basic JavaScript
-* p5.js
-* Strings in JS
-* Simple Text Analysis
-   * client-side
-   * server-side
+* [Beyond Processing and into JavaScript and p5.js](http://shiffman.net/teaching/a2z/week1/#beyond)
+* [Installing Node](http://shiffman.net/teaching/a2z/week1/#node)
+* [JavaScript 101](http://shiffman.net/teaching/a2z/week1/#js101)
+* [Strings in JavaScript](http://shiffman.net/teaching/a2z/week1/#strings)
+* [File I/0 with Node](http://shiffman.net/teaching/a2z/week1/#file)
+* [Simple Text Analysis](http://shiffman.net/teaching/a2z/week1/#analysis)
+* [Back to p5.js, processing text from a user](http://shiffman.net/teaching/a2z/week1/#p5analysis)
 
 ### Assignment
 * [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
