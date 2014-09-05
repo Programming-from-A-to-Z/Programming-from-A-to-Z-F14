@@ -10,13 +10,11 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Mailing List
 * [Join ITP A2Z Google Group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/).
 
-
 ## Week 1 - Sep 5
 ### Course intro / expectations
 * Where to find course materials
 * Overview / syllabus
 * Homework / final project
-* Attendance / participation
 
 ### [Week 1 Notes](http://shiffman.net/teaching/a2z/week1/)
 * Basic JavaScript
