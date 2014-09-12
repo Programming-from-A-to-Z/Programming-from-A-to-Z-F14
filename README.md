@@ -41,16 +41,50 @@ This course focuses on programming strategies and techniques behind procedural a
 
 
 ## Week 2 - Regular Expressions - Sep 12
-* Intro to regex
-* egrep
-* meta-characters
-   * position
-   * single character
-   * quantifiers
-   * character classes
-* regex in JS
-* splitting text into tokens
-* find and replace
+
+### [Week 2 Notes](http://shiffman.net/teaching/a2z/regex)
+* [Intro to Regular Expressions](http://shiffman.net/teaching/a2z/regex/#regex)
+   * meta-characters
+       * position
+       * single character
+       * quantifiers
+       * character classes
+* [Testing regex with egrep](http://shiffman.net/teaching/a2z/regex/#egrep)
+* [Regex in JavaScript](#jsregex)
+* [Splitting with Regex](#splitting)
+* [Search and Replace](#searchreplace)
+
+### Examples
+* Plain JS
+    * [Basic Regex: exec()](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/regex_helloworld1.js)
+    * [Basic Regex: match()](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/regex_helloworld2.js)
+    * [VowelCounter](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/vowelcounter.js)
+    * [WordSplitterRegex](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/split.js)
+    * [Simple replace](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/replace1.js)
+    * [Replace back reference](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/replace2.js)
+* P5 examples
+    * [Find double words](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/doublewords)
+    * [Double the vowels](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/voweldoubler)
+
+### Resources
+* [Chapter 1, Mastering Regular Expressions](http://safari.oreilly.com/0596002890/mastregex2-CHP-1)
+* [Guide to regex in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+* [Eloquent JavaScript Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
+* [Play the regex crossword!](http://regexcrossword.com/) 
+* [Another, older Java-based Regex game](http://www.javaregex.com/agame.html)
+
+
+### Reading
+* If you are looking for some inspiration about computational methodologies as it relates to writing, read about [Jackson Mac Low](http://en.wikipedia.org/wiki/Jackson_Mac_Low).  Mac Low was an American poet well-known for his use of chance operations and other algorithmic processes in his writing.  Following are two articles I would suggest:  [Science, Technology, and Poetry: Some Thoughts on Jackson Mac Low](http://research.amnh.org/~mordecai/papers/jml_fest.html) by [Mordecai-Mark Mac Low](http://research.amnh.org/~mordecai/index.html) and [Listen and Relate: Notes Towards a Reading of Jackson Mac Low](http://epc.buffalo.edu/authors/hartley/maclow/maclow.htm) by George Hartley.
+
+### Assignment
+*  Practice Regular Expressions!  If you are stuck for an idea, here are some suggestions:
+    * Take your code from week 1, expand and rework it using Regular Expressions.
+    * Taking inspiration from the [Pirate Translator](http://www.apple.com/downloads/dashboard/calculate_convert/piratetranslator.html), re-imagine a text using regex search and replace.
+    * Create a program that performs [Mac Low's Diastic reading of a text](http://www.eskimo.com/~rstarr/poormfa/explaindiastic.html
+    * Write a regular expression that matches any e-mail address.
+    * Take that regular expression and do a search and replace so that any e-mail address is made into a &#8220;mailto:&#8221; link.
+    * Create an example that reads an HTML page and removes any markup and leaves only the raw content.
 
 ## Week 3 - Text Analysis - Sep 19
 * Text concordance
