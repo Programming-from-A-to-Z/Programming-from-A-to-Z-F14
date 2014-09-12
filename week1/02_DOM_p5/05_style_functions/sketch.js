@@ -10,12 +10,3 @@ function setup() {
   text.style("font-size", "18pt");
   text.style("padding", "10px");
 }
-
-
-// Temporary until https://github.com/lmccart/p5.js/pull/354
-function noCanvas() {
-  var c = document.getElementById('defaultCanvas');
-  if (c) {
-    c.parentNode.removeChild(c);
-  }
-}

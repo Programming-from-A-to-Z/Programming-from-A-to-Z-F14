@@ -34,10 +34,3 @@ function doublewords() {
   reversed.html(output);
 }
 
-function noCanvas() {
-  var c = document.getElementById('defaultCanvas');
-  if (c) {
-    c.parentNode.removeChild(c);
-  }
-}
-

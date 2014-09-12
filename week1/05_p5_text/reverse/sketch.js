@@ -39,10 +39,3 @@ function reverseit() {
   }
 }
 
-function noCanvas() {
-  var c = document.getElementById('defaultCanvas');
-  if (c) {
-    c.parentNode.removeChild(c);
-  }
-}
-

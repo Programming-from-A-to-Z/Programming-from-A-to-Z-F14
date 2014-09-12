@@ -12,7 +12,7 @@ function setup() {
   canvas.class("lemon");
    
   // We can put the link element inside the paragraph one with child()
-  text.child("pear");
+  text.child(link);
 }
 
 
