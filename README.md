@@ -85,6 +85,11 @@ This course focuses on programming strategies and techniques behind procedural a
     * Write a regular expression that matches any e-mail address.
     * Take that regular expression and do a search and replace so that any e-mail address is made into a &#8220;mailto:&#8221; link.
     * Create an example that reads an HTML page and removes any markup and leaves only the raw content.
+    * Write a regular expression that matches any e-mail address.
+    * Take that regular expression and do a search and replace so that any e-mail address is made into a &#8220;mailto:&#8221; link.
+    * Create an example that reads an HTML page and removes any markup and leaves only the raw content.
+    * Adapt the [regex tester](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/regex_tester) to bea  search/replace tester.
+    * Create a regex that matches only code comments in code.
 * Don't forgot to document your work online, upload to dropbox, and post to the [homework wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Week-2-Homework).
    
 ## Week 3 - Text Analysis - Sep 19
