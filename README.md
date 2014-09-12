@@ -81,7 +81,7 @@ This course focuses on programming strategies and techniques behind procedural a
 *  Practice Regular Expressions!  If you are stuck for an idea, here are some suggestions:
     * Take your code from week 1, expand and rework it using Regular Expressions.
     * Taking inspiration from the [Pirate Translator](http://www.apple.com/downloads/dashboard/calculate_convert/piratetranslator.html), re-imagine a text using regex search and replace.
-    * Create a program that performs [Mac Low's Diastic reading of a text](http://www.eskimo.com/~rstarr/poormfa/explaindiastic.html)
+    * Create a program that performs Mac Low's Diastic reading of a text. [Diastic Explanation](http://intercapillaryspace.blogspot.com/2012/03/mac-lows-diastic-process-in-gale.html), [eDiastic demo](http://www.eddeaddad.net/eDiastic/l)
     * Write a regular expression that matches any e-mail address.
     * Take that regular expression and do a search and replace so that any e-mail address is made into a &#8220;mailto:&#8221; link.
     * Create an example that reads an HTML page and removes any markup and leaves only the raw content.
