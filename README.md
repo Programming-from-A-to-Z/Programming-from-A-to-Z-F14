@@ -31,7 +31,8 @@ This course focuses on programming strategies and techniques behind procedural a
 * [DOM manipulation in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/02_DOM_p5)
 * [Strings in JS](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/03_Strings)
 * [File I/O in Node](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/04_fileinput)
-* [Process user text in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/05_p5_text)
+* [File I/O in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/05_fileinput_p5)
+* [Process user text in p5](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week1/06_p5_text)
 
 ### Assignment
 * [Sign up for the class google group](https://groups.google.com/a/nyu.edu/forum/#!forum/a2z-group/)
@@ -63,8 +64,12 @@ This course focuses on programming strategies and techniques behind procedural a
     * [Simple replace](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/replace1.js)
     * [Replace back reference](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week2_regex/regex_node/replace2.js)
 * P5 examples
-    * [Find double words](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/doublewords)
-    * [Double the vowels](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/voweldoubler)
+    * [Regex Basics](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/01_regexbasics)
+    * [Find double words](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/02_doublewords)
+    * [Double the vowels](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/03_voweldoubler)
+    * [Test a regex](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/04_regex_tester)
+    * [Find links](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/05_linkfinder)
+
 
 ### Resources
 * [Chapter 1, Mastering Regular Expressions](http://safari.oreilly.com/0596002890/mastregex2-CHP-1)
