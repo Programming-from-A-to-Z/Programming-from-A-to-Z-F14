@@ -1,9 +1,6 @@
 // based on http://www.html5rocks.com/en/tutorials/file/dndfiles/
 
-var files;
-var list;
-
-
+// When we get text we'll just make a paragraph element with the text
 function process(text) {
   createP(text);
 }
@@ -19,23 +16,29 @@ function setup() {
 
 
   //<input type="file" id="files" name="files[]" multiple />
-  files = createInput();
-  files.attribute('type','file');
+  // Make the file input
+  var fileInput = createInput();
+  // Set attribute to file
+  fileInput.attribute('type','file');
   // If we want to allow multiple files
-  files.attribute('multiple','');
-  files.elt.addEventListener('change', handleFileSelect, false);
+  fileInput.attribute('multiple','');
+  // If a file is selected this event will be triggered
+  fileInput.elt.addEventListener('change', handleFileSelect, false);
+   
+  // For the list of files
+  var list = createElement('ol','');
 
-  list = createElement('ol','');
-
-  content = createP('');
-
+  // Function to handle when a file is selected
   function handleFileSelect(evt) {    
-    var files = evt.target.files; // FileList object
-    // files is a FileList of File objects. List some properties.
+    
+    // A FileList
+    var files = evt.target.files;
+    // Show some properties
     for (var i = 0, f; f = files[i]; i++) {
       var file = createElement('li',f.name + ' ' + f.type + ' ' + f.size + ' bytes');
       file.parent(list);
-
+      
+      // Read the file and process the result
       var reader = new FileReader();
       reader.readAsText(f);
       reader.onload = function(e) {
