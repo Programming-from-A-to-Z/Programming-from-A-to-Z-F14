@@ -120,7 +120,7 @@ This course focuses on programming strategies and techniques behind procedural a
 * TBA
 
 ## Week 7 - Present Final Projects - Oct 23 -- 12:30 - 3:00 pm
-* ***NOTE THE NEW DATE FOR THIS FINAL CLASS***
+* ***NOTE THE NEW DATE FOR THIS FINAL CLASS Oct 23 -- 12:30 - 3:00 pm Room TBA***
 
 ## Resources
 * [p5.js](http://p5js.org)
