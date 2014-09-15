@@ -104,20 +104,23 @@ This course focuses on programming strategies and techniques behind procedural a
     * [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
 * Bayesian Analysis (spam filtering)
 
-## Week 4 - Text Generation - DATE TBA
+## No class meeting Friday, Sept 26
+
+## Week 4 - Text Generation - Oct 3
 * Markov Chains
    * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
 * Context Free Grammar
 
-## Week 5 - Text Visualization - Oct 3
+## Week 5 - Text Visualization - Oct 10
 * word clouds
 * text on curves
 * canvas vs DOM
 
-## Week 6 - Bonus Topics - Oct 10
+## Week 6 - Bonus Topics - Oct 17
 * TBA
 
-## Week 7 - Present Final Projects - Oct 17
+## Week 7 - Present Final Projects - Oct 23 -- 12:30 - 3:00 pm
+* ***NOTE THE NEW DATE FOR THIS FINAL CLASS***
 
 ## Resources
 * [p5.js](http://p5js.org)
