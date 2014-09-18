@@ -35,6 +35,9 @@ var keys = [];
 // Read the main file we want to evaluate
 fs.readFile(file, 'utf-8', countWords);
 
+// Total word count of document
+var totalwords = 0;
+
 // Count the words of just that one file
 function countWords(err, data) {
   // If there's a problem
@@ -66,6 +69,8 @@ function countWords(err, data) {
       } else {
         dictionary[token].count++;
       }
+      // Increment the count of total words
+      totalwords++;
     }
   }
 }
@@ -123,7 +128,7 @@ function finish() {
   for (var i = 0; i < keys.length; i++) {
     var key = keys[i];
     var word = dictionary[key];
-    var tf = word.count / keys.length;
+    var tf = word.count / totalwords;
     // See: 
     var idf = Math.log(files.length / word.docCount);
     word.tfidf = tf * idf;
@@ -145,6 +150,6 @@ function finish() {
   for (var i = 0; i < max; i++) {
     var key = keys[i];
     var score = dictionary[key].tfidf.toPrecision(2);
-    console.log(key + ': ' + score);
+    console.log(key + ': ' + score + ': ' + dictionary[key].count + ',' + dictionary[key].docCount);
   }
 }
