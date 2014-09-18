@@ -1,7 +1,6 @@
-// Scramble what the user enters into a text field
 
-// The scrambled text
-var reversed = "";
+// The results of what the regex found
+var pelement = "";
 var input;
 
 function setup() {
@@ -17,7 +16,7 @@ function setup() {
   button.mousePressed(doublewords);
     
   // An HTML Element for the resulting text
-  reversed = createP("");
+  pelement = createP("");
 }
 
 function doublewords() {
@@ -32,14 +31,14 @@ function doublewords() {
   var output = '';
 
   if (results == null) {
-    reversed.html('none found!');
+    pelement.html('none found!');
   } else {
     // We get an array of matches back
     for (var i = 0; i < results.length; i++) {
       output += results[i] + '<br/>';
     }
     // Update the HTML Element
-    reversed.html(output);
+    pelement.html(output);
   }
 }
 

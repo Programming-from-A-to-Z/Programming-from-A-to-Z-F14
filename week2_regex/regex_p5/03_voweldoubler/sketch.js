@@ -1,7 +1,5 @@
-// Scramble what the user enters into a text field
-
-// The scrambled text
-var reversed = "";
+// The new text
+var pelement = "";
 var input;
 
 function setup() {
@@ -16,8 +14,8 @@ function setup() {
   var button = createButton("Double the vowels!");
   button.mousePressed(doublewords);
     
-  // An HTML Element for the resulting text
-  reversed = createP("");
+  // An HTML Element for the new text
+  pelement = createP("");
 }
 
 function doublewords() {
@@ -28,9 +26,12 @@ function doublewords() {
   // Captured as group #1
   var regex = /([aeiou])/gi;         
   
+  // This one is for doubling words
+  // var regex = /(\b\w+\b)/gi;         
+  
   // Replacing the vowel with two of itself
   var output = text.replace(regex,'$1$1');
   // Update the HTML Element
-  reversed.html(output);
+  pelement.html(output);
 }
 
