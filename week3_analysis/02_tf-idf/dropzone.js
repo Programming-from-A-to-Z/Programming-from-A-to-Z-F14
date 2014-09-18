@@ -48,7 +48,7 @@ function setupDropZone() {
 
     // Show some properties
     for (var i = 0, f; f = files[i]; i++) {
-      var link = createA('#',f.name + ' ' + f.type + ' ' + f.size + ' bytes');
+      var link = createA('#',f.name);
       link.mousePressed(makeFileHandler(f));
       var file = createElement('li','');
       link.parent(file);

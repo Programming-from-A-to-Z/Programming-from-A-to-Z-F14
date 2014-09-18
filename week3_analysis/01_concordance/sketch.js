@@ -10,16 +10,15 @@ function setup() {
   // Though doing something visual with this is a great idea for an assignment
   noCanvas();
 
-  // Make a dictionary object
+  // Make a concordance object
   // This will hold every word and its count
-  concordance = new Dictionary();
+  concordance = new Concordance();
 
   // For drag and dropping files
   setupDropZone();
 
   // Just loading from a file for simplicity
   // var stuff = loadStrings('data/test.txt', process);
-
 }
 
 function process(data) {
