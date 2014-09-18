@@ -10,9 +10,7 @@ function setup() {
   // Though doing something visual with this is a great idea for an assignment
   noCanvas();
 
-  // Make a dictionary object
-  // This will hold every word and its count
-  concordance = new Dictionary();
+
 
   // For drag and dropping files
   setupDropZone();
@@ -20,6 +18,25 @@ function setup() {
   // Just loading from a file for simplicity
   // var stuff = loadStrings('data/test.txt', process);
 
+}
+
+function makeFileHandler(file) {
+  return function() {
+    tfidf(file);
+  }
+}
+
+
+function tfidf(file) {
+  // Make a dictionary object
+  // This will hold every word and its count
+  concordance = new Dictionary();
+  // Read the file and process the result
+  var reader = new FileReader();
+  reader.readAsText(file);
+  reader.onload = function(e) {
+    process(e.target.result);
+  }
 }
 
 function process(data) {
@@ -52,6 +69,21 @@ function process(data) {
     var div = createDiv(keys[i] + ': '+ count);
     div.class('concordance');
   }
+
+  // Now we need to read all the files?
+  for (var i = 0; i < files.length; i++) {
+    var reader = new FileReader();
+    reader.readAsText(files[i]);
+    reader.onload = function(e) {
+      countDocs(e.target.result);
+    }
+  }
+}
+
+var howmany = 0;
+function countDocs(text) {
+  console.log(howmany);
+  howmany++;
 }
 
 // Go through and remove all the divs
