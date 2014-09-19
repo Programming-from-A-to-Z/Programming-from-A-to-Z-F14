@@ -116,18 +116,12 @@ This course focuses on programming strategies and techniques behind procedural a
 * coming
 
 ### Assignment
-*  
-   
-## Week 3 - Text Analysis - Sep 19
-* Text concordance
-* Keyword finding
-* Bayesian Analysis (spam filtering)
-
-* Text concordance
-* Keyword finding
-* What our words say about us? 
-    * [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
-* Bayesian Analysis (spam filtering)
+*  Experiment with text analysis.  Here are some ideas if you are feeling stuck.
+   * Visualize the results of a concordance using canvas (or some other means).
+   * Expand the information the concordance holds so that it keeps track of word positions (i.e. not only how many times do the words appear in the source text, but where do they appear each time.)
+   * Implement some of the ideas specific to spam filtering to the bayesian classification exmple.
+   * Taking inspiration from the Secret Life of Pronouns, count specific words (like personal pronouns) to determine something about a particular piece of text.  Can you design an exercise where a user has to write about something and show them the results?
+   * Use the ideas to find similarities between people. For example, if you look at all the e-mails on the ITP student list, can you determine who is similar? Consider using properties in addition to word count, such as time of e-mails, length of e-mails, etc.
 
 ## No class meeting Friday, Sept 26
 
