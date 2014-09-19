@@ -113,10 +113,10 @@ module.exports = {
               // For an unknown word
               // We could just not include this (would be simpler)
               // Or in the case of spam we might give it 0.4 chance of spam
-              word = {};
-              word.word = token;
-              word.probA = 0.5;
-              word.probB = 0.5;
+              // word = {};
+              // word.word = token;
+              // word.probA = 0.5;
+              // word.probB = 0.5;
             }
             words.push(word);        
         }
@@ -136,7 +136,7 @@ module.exports = {
       
       // Apply formula
       var pA = productA / (productA + productB);
-       
+      
       console.log(words);
       console.log("Likelihood of category A: " + pA.toPrecision(4));
       console.log("Likelihood of category B: " + (1-pA).toPrecision(4));
