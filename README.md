@@ -70,14 +70,12 @@ This course focuses on programming strategies and techniques behind procedural a
     * [Test a regex](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/04_regex_tester)
     * [Find links](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week2_regex/regex_p5/05_linkfinder)
 
-
 ### Resources
 * [Chapter 1, Mastering Regular Expressions](http://safari.oreilly.com/0596002890/mastregex2-CHP-1)
 * [Guide to regex in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 * [Eloquent JavaScript Regular Expressions](http://eloquentjavascript.net/09_regexp.html)
 * [Play the regex crossword!](http://regexcrossword.com/) 
 * [Another, older Java-based Regex game](http://www.javaregex.com/agame.html)
-
 
 ### Reading
 * If you are looking for some inspiration about computational methodologies as it relates to writing, read about [Jackson Mac Low](http://en.wikipedia.org/wiki/Jackson_Mac_Low).  Mac Low was an American poet well-known for his use of chance operations and other algorithmic processes in his writing.  Following are two articles I would suggest:  [Science, Technology, and Poetry: Some Thoughts on Jackson Mac Low](http://research.amnh.org/~mordecai/papers/jml_fest.html) by [Mordecai-Mark Mac Low](http://research.amnh.org/~mordecai/index.html) and [Listen and Relate: Notes Towards a Reading of Jackson Mac Low](http://epc.buffalo.edu/authors/hartley/maclow/maclow.htm) by George Hartley.
@@ -98,6 +96,33 @@ This course focuses on programming strategies and techniques behind procedural a
 * Don't forgot to document your work online, upload to dropbox, and post to the [homework wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Week-2-Homework).
    
 ## Week 3 - Text Analysis - Sep 19
+### [Week 3 Notes](http://shiffman.net/teaching/a2z/analysis)
+* [Simple Concordance]()
+* [Finding Key Words]()
+* [RiTa Library for Text]()
+* [Text Classification]()
+
+### Examples
+* [Concordance]
+* [Keywords: TF-IDF]
+* [RiTa Basics]
+* [Parts of Speech Counting]
+* [Naive Bayesian Text Classification]
+
+### Resources
+* What our words say about us? [Secret Life of Pronouns](http://www.secretlifeofpronouns.com/)
+
+### Reading
+* coming
+
+### Assignment
+*  
+   
+## Week 3 - Text Analysis - Sep 19
+* Text concordance
+* Keyword finding
+* Bayesian Analysis (spam filtering)
+
 * Text concordance
 * Keyword finding
 * What our words say about us? 
