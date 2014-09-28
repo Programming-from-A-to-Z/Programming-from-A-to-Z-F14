@@ -1,6 +1,8 @@
 
 function setup() {
   noCanvas();
+  var button = getElement('generate');
+  button.mousePressed(generate);
 }
 
 function draw() {

@@ -7,14 +7,13 @@
 
 <body>
 
-  <p>Input text:</p>
-  
   <p>
+    Input text:<br/>
     <textarea id="input" rows = "10" cols="100">Paste some text here.</textarea>
   </p>
 
-  <p>level:<br>
-    <input type="radio" name="level" value="char" checked="true" id='char'>by character<br>
+  <p>level:<br/>
+    <input type="radio" name="level" value="char" checked="true" id='char'>by character<br/>
     <input type="radio" name="level" value="word" id = 'word'>by word
   </p>
 
@@ -30,11 +29,11 @@
   </p>
 
   <p>
-    length:<input type="text" size="2" id="length" value="500"></input>
+    length: <input type="text" size="2" id="length" value="500"></input>
   </p>
 
   <p>
-    <button onclick="generate()">generate</button>
+    <button id="generate">generate</button>
   </p>
 
   <p>Result:</p>
