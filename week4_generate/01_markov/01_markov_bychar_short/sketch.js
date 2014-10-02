@@ -9,13 +9,14 @@ function preload() {
 }
 
 function setup() {
-  generator = new MarkovGenerator(2, 100);
+  noCanvas();
+  generator = new MarkovGenerator(3, 100);
   for (var i = 0; i < lines.length; i++) {
     generator.feed(lines[i]);
   }
-  var button = createButton('Rename ITP.');
+  output = getElement('name');
+  var button = getElement('button');
   button.mousePressed(generate);
-  output = createP('');
   noCanvas();
 }
 

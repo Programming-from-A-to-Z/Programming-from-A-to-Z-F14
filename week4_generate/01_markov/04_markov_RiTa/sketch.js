@@ -20,6 +20,7 @@ function setup() {
 }
 
 function generate() {
-  //var text = generator.generate();
-  //output.html(text);    
+  var names = generator.generateSentences(1);
+  console.log(names);
+  output.html(names);    
 }

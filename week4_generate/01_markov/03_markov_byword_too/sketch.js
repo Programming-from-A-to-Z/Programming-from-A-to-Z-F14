@@ -17,6 +17,10 @@ function generate() {
   
   var generator = new MarkovGenerator(order.value(), length.value(), byWord.elt.checked);
   var input = getElement('input');
-  generator.feed(input.value());
+  
+  var lines = input.value().split('\n');
+  for (var i = 0; i < lines.length; i++) {
+    generator.feed(lines[i]);
+  }
   output.html(generator.generate());
 }
