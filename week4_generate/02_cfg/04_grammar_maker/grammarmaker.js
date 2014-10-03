@@ -34,58 +34,58 @@ function analyze(err, data) {
   grammar += "#  Which is based on a grammar by G.B. Kaminaga\n";
   grammar += "#  line-breaks are noted by '%' sign\n\n";
 
-	grammar += "{\n";
-	grammar += "<start>\n";
-	grammar += "<5-line> % <7-line> % <5-line>\n";
-	grammar += "}\n\n";
+  grammar += "{\n";
+  grammar += "<start>\n";
+  grammar += "<5-line> % <7-line> % <5-line>\n";
+  grammar += "}\n\n";
 
-	grammar += "{\n";
-	grammar += "<5-line>\n";
-	grammar += " <1> <4>  |  <1> <3> <1>  |  <1> <1> <3>  |  <1> <2> <2>  |  <1> <2> <1> <1>  |  <1> <1> <2> <1>  |  <1> <1> <1> <2>  |  <1> <1> <1> <1> <1>  |  <2> <3>  |  <2> <2> <1>  |  <2> <1> <2>  |  <2> <1> <1> <1>  |  <3> <2>  |  <3> <1> <1>  |  <4> <1>  |  <5>\n";
-	grammar += "}\n\n";
+  grammar += "{\n";
+  grammar += "<5-line>\n";
+  grammar += " <1> <4>  |  <1> <3> <1>  |  <1> <1> <3>  |  <1> <2> <2>  |  <1> <2> <1> <1>  |  <1> <1> <2> <1>  |  <1> <1> <1> <2>  |  <1> <1> <1> <1> <1>  |  <2> <3>  |  <2> <2> <1>  |  <2> <1> <2>  |  <2> <1> <1> <1>  |  <3> <2>  |  <3> <1> <1>  |  <4> <1>  |  <5>\n";
+  grammar += "}\n\n";
 
-	grammar += "{\n";
-	grammar += "<7-line>\n";
-	grammar += "<1> <1> <5-line>  |  <2> <5-line>  |  <5-line> <1> <1>  |  <5-line> <2> \n";
-	grammar += "}\n\n";
+  grammar += "{\n";
+  grammar += "<7-line>\n";
+  grammar += "<1> <1> <5-line>  |  <2> <5-line>  |  <5-line> <1> <1>  |  <5-line> <2> \n";
+  grammar += "}\n\n";
 
-	// Create 5 arrays to store words of different syllable counts
-	var wordsBySyllable = new Array(5);
-	for (var i = 0; i < wordsBySyllable.length; i++) {
-		wordsBySyllable[i] = [];
-	}
+  // Create 5 arrays to store words of different syllable counts
+  var wordsBySyllable = new Array(5);
+  for (var i = 0; i < wordsBySyllable.length; i++) {
+    wordsBySyllable[i] = [];
+  }
 
-	var concordance = new Concordance();
-	concordance.process(data);
+  var concordance = new Concordance();
+  concordance.process(data);
 
-	var words = concordance.getKeys();
+  var words = concordance.getKeys();
 
-	// Go through all the words
-	for (var i = 0; i < words.length; i++) {
-		var s = words[i];
-		// Use RiTa's Analyzer to determine syllable count
-		var syllables = RiTa.getSyllables(s);
-		console.log(syllables);
-		// Syllables are separated with colons
-		var count = syllables.split("/").length;
-		if (count < 6) {
-			// Add the word to the appropriate ArrayList
-			// Assuming it has between 1 and 5 syllables
-			wordsBySyllable[count-1].push(s);
-		}
-	}
+  // Go through all the words
+  for (var i = 0; i < words.length; i++) {
+    var s = words[i];
+    // Use RiTa's Analyzer to determine syllable count
+    var syllables = RiTa.getSyllables(s);
+    console.log(syllables);
+    // Syllables are separated with colons
+    var count = syllables.split("/").length;
+    if (count < 6) {
+      // Add the word to the appropriate ArrayList
+      // Assuming it has between 1 and 5 syllables
+      wordsBySyllable[count-1].push(s);
+    }
+  }
 
-	// Finish up the file by writing production rules
-	// for 1-5 syllable words
-	for (var i = 0; i < 5; i++) {
-		grammar += "\n{";
-		grammar += "<"+ (i+1) + ">";
-		for (var j = 0; j < wordsBySyllable[i].length; j++) {
-			var s = wordsBySyllable[i][j];
-			grammar += s + " | ";
-		}
-		grammar += "\n}";
-	}
+  // Finish up the file by writing production rules
+  // for 1-5 syllable words
+  for (var i = 0; i < 5; i++) {
+    grammar += "\n{";
+    grammar += "<"+ (i+1) + ">";
+    for (var j = 0; j < wordsBySyllable[i].length; j++) {
+      var s = wordsBySyllable[i][j];
+      grammar += s + " | ";
+    }
+    grammar += "\n}";
+  }
 
 
   // If we wanted to write a file out
