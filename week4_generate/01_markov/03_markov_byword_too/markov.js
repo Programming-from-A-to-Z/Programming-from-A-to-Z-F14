@@ -5,6 +5,8 @@
 // This is based on Allison Parrish's great RWET examples
 // https://github.com/aparrish/rwet-examples
 
+// This object will do a Markov chain by character or by "word"
+
 // A function to split a text up into tokens
 // Just using spaces for now to preserve punctuation
 function tokenize(text) {
