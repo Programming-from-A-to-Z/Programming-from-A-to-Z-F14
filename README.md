@@ -128,7 +128,8 @@ This course focuses on programming strategies and techniques behind procedural a
   * Implement some of the ideas specific to spam filtering to the bayesian classification exmple.
   * In James W. Pennebaker's book [The Secret Life of Pronouns](http://secretlifeofpronouns.com/), Pennebaker describes his research into how the frequency of words that have little to no meaning on their own (I, you, they, a, an, the, etc.) are a window into the emotional state or personality of an author or speaker.  For example, heavy use of the pronoun “I” is an indicator of “depression, stress or insecurity”.  Create a page sketch that analyzes the use of pronouns.  For more, visit [analyzewords.com](http://www.analyzewords.com/">http://www.analyzewords.com).
   * Use the ideas to find similarities between people. For example, if you look at all the e-mails on the ITP student list, can you determine who is similar? Consider using properties in addition to word count, such as time of e-mails, length of e-mails, etc.
-  ## No class meeting Friday, Sept 26
+
+## No class meeting Friday, Sept 26
 
 ## Week 4 - Text Generation - Oct 3
 * Markov Chains
@@ -143,8 +144,8 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Week 6 - Bonus Topics - Oct 17
 * TBA
 
-## Week 7 - Present Final Projects - Oct 23 -- 12:30 - 3:00 pm
-* ***NOTE THE NEW DATE FOR THIS FINAL CLASS Oct 23 -- 12:30 - 3:00 pm Room TBA***
+## Week 7 - Present Final Projects - Oct 30 -- 12:30 - 3:00 pm
+* ***NOTE THE NEW DATE FOR THIS FINAL CLASS Oct 30 -- 12:30 - 3:00 pm Room TBA***
 
 ## Resources
 * [p5.js](http://p5js.org)
