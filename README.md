@@ -132,9 +132,30 @@ This course focuses on programming strategies and techniques behind procedural a
 ## No class meeting Friday, Sept 26
 
 ## Week 4 - Text Generation - Oct 3
-* Markov Chains
-   * [Animated explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
-* Context Free Grammar
+### [Week 4 Notes](http://shiffman.net/teaching/a2z/generate)
+* [N-Grams and Markov Chains](http://shiffman.net/teaching/a2z/generate#ngrams)
+* [Grammars](http://shiffman.net/teaching/a2z/generate#grammar)
+* Wordnik
+* TwitterBot
+
+### Examples
+* [Markov chains](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week4_generate/01_markov)
+* [Context-free Grammars](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week4_generate/02_cfg)
+* [Wordnik API](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week4_generate/03_wordnik/01_wordnik)
+* [TwitterBot](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week4_generate/04_twitter_bot/bot.js)
+
+### Resources
+* [Animated Markov Chain explanation](http://setosa.io/blog/2014/07/26/markov-chains/) 
+* [N-Grams and Markov Chains by Allison Parrish](http://www.decontextualize.com/teaching/rwet/n-grams-and-markov-chains/)
+* [Context-Free Grammars by Allison Parrish](http://www.decontextualize.com/teaching/rwet/recursion-and-context-free-grammars/)
+* [N-Grams and Markov Chains by Daniel Howe](http://www.rednoise.org/pdal/index.php?n=Main.N-Grams)
+* [Context-Free Grammars by Daniel Howe](http://www.rednoise.org/pdal/index.php?n=Main.Grammars)
+* [Google N-Gram Viewer](https://books.google.com/ngrams), [google blog post about n-grams](http://googleresearch.blogspot.com/2006/08/all-our-n-gram-are-belong-to-you.html)
+* [Markov Models of Natural Language](http://www.cs.princeton.edu/courses/archive/spr05/cos126/assignments/markov.html)
+* [Three Models for the Description of Language (Chomsky)](http://chomsky.info/articles/195609--.pdf)
+
+### Assignment
+* TBA
 
 ## Week 5 - Text Visualization - Oct 10
 * word clouds
