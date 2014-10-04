@@ -9,13 +9,13 @@
 var randomNounURL = "http://api.wordnik.com/v4/words.json/randomWords?" + 
                     "&includePartOfSpeech=noun" + 
                     "&minLength=1&maxLength=-1" + 
-                    "&api_key=48dd829661f515d5abc0d03197a00582e888cc7da2484d5c7";
+                    "&api_key=______________";
 
 // Call to get a list of random verbs
 var randomVerbURL = "http://api.wordnik.com/v4/words.json/randomWords?" + 
                     "&includePartOfSpeech=verb" + 
                     "&minLength=1&maxLength=-1" + 
-                    "&api_key=48dd829661f515d5abc0d03197a00582e888cc7da2484d5c7";
+                    "&api_key=______________";
 
 function setup() {
   // A button to generate a new sentence
