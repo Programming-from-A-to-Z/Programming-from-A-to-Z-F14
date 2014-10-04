@@ -29,20 +29,14 @@ function analyze(err, data) {
     throw err;
   }
 
-  var grammar = '';
-  grammar += "#  This grammar file is based on Daniel Howe's Haiku grammar\n";
-  grammar += "#  Which is based on a grammar by G.B. Kaminaga\n";
-  grammar += "#  line-breaks are noted by '%' sign\n\n";
+  
+  var grammar = {};
 
-  grammar += "<start> -> ";
-  grammar += "<5-line> % <7-line> % <5-line>\n";
-
-  grammar += "<5-line> -> ";
-  grammar += " <1> <4>  |  <1> <3> <1>  |  <1> <1> <3>  |  <1> <2> <2>  |  <1> <2> <1> <1>  |  <1> <1> <2> <1>  |  <1> <1> <1> <2>  |  <1> <1> <1> <1> <1>  |  <2> <3>  |  <2> <2> <1>  |  <2> <1> <2>  |  <2> <1> <1> <1>  |  <3> <2>  |  <3> <1> <1>  |  <4> <1>  |  <5>\n";
-
-  grammar += "<7-line> ->";
-  grammar += "<1> <1> <5-line>  |  <2> <5-line>  |  <5-line> <1> <1>  |  <5-line> <2> \n";
-
+  
+  grammar['<start>'] = '<5-line> % <7-line> % <5-line>'
+  grammar['<5-line>'] = '<1> <4>  |  <1> <3> <1>  |  <1> <1> <3>  |  <1> <2> <2>  |  <1> <2> <1> <1>  |  <1> <1> <2> <1>  |  <1> <1> <1> <2>  |  <1> <1> <1> <1> <1>  |  <2> <3>  |  <2> <2> <1>  |  <2> <1> <2>  |  <2> <1> <1> <1>  |  <3> <2>  |  <3> <1> <1>  |  <4> <1>  |  <5>'
+  grammar['<7-line>'] = '<1> <1> <5-line>  |  <2> <5-line>  |  <5-line> <1> <1>  |  <5-line> <2>'
+  
   // Create 5 arrays to store words of different syllable counts
   var wordsBySyllable = new Array(5);
   for (var i = 0; i < wordsBySyllable.length; i++) {
@@ -71,17 +65,21 @@ function analyze(err, data) {
 
   // Finish up the file by writing production rules
   // for 1-5 syllable words
+
   for (var i = 0; i < 5; i++) {
-    grammar += "<"+ (i+1) + "> ->";
+    var words = '';
     for (var j = 0; j < wordsBySyllable[i].length; j++) {
       var s = wordsBySyllable[i][j];
-      grammar += s + " | ";
+      words += s + " | ";
     }
-    grammar += "\n";
+    grammar['<'+ (i+1) + '>'] = words;
+
   }
+  
+  var jsonstring = JSON.stringify(grammar, null, ' ');
 
   // If we wanted to write a file out
-  fs.writeFile("generated_grammar.g", grammar, output);
+  fs.writeFile("generated_grammar.json", jsonstring, output);
   function output(err) {
     if (err) {
       throw err;
