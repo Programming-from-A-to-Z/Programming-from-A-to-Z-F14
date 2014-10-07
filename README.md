@@ -155,7 +155,9 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Three Models for the Description of Language (Chomsky)](http://chomsky.info/articles/195609--.pdf)
 
 ### Assignment
-* Generate text procedurally.  Some ideas:
+* Generate text procedurally.
+* Post a link about your work to: [week 4 homework wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Week-4-Homework)
+* Some ideas:
     * Create page that generates its content by feeding an existing text into the Markov chain algorithm.  What effect does the value of n (the “order” of the n-gram) have on the result?  [Allison Parish's ITP Course generator](http://static.decontextualize.com/toys/next_semester) is an excellent example.
     * Visualize N-gram frequencies.  See [WebTrigrams by Chris Harrison](http://www.chrisharrison.net/index.php/Visualizations/WebTrigrams) for an example.
     * What happens if you mash-up two texts? For example, feed Shakespeare plays and ITP physical computing blog post content into the generator.  Can you modify the MarkovGenerator object to weight the input text (i.e. make shakespeare N-grams have higher probabilities?)  [The Gnoetry Project](http://www.beardofbees.com/gnoetry.html) is a useful reference.  
