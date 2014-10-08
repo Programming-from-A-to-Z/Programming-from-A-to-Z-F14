@@ -14,9 +14,11 @@ function setup() {
   // This will hold every word and its count
   concordance = new Concordance();
 
+  console.log(windowHeight);
+
 
   // Just loading from a file for simplicity
-  var stuff = loadStrings('data/hamlet.txt', process);
+  var stuff = loadStrings('data/test.txt', process);
 }
 
 function process(data) {
@@ -40,8 +42,8 @@ function process(data) {
   for (var i = 0; i < keys.length; i++) {
     var count = concordance.getCount(keys[i]);
     var div = createDiv(keys[i] + ' ');
-    div.style('font-size',count+'pt');
-    div.style('display','inline');
+    div.style('font-size',count*20+'pt');
+    div.position(floor(random(windowWidth)),floor(random(windowHeight)));
   }
 }
 

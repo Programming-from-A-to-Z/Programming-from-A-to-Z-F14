@@ -29,20 +29,19 @@ function process(data) {
   } else {
     text = data;
   }
-  
   // Process this data
   concordance.process(text);
   // Sort
-  concordance.sortByCount();
-  // Get all the words
-  var keys = concordance.getKeys();
-  // Get the count for each word and display
-  for (var i = 0; i < keys.length; i++) {
-    var count = concordance.getCount(keys[i]);
-    var div = createDiv(keys[i] + ' ');
-    div.style('font-size',count+'pt');
-    div.style('display','inline');
-  }
+  // concordance.sortByCount();
+  // // Get all the words
+  // var keys = concordance.getKeys();
+  // // Get the count for each word and display
+  // for (var i = 0; i < keys.length; i++) {
+  //   var count = concordance.getCount(keys[i]);
+  //   var div = createDiv(keys[i] + ' ');
+  //   div.style('font-size',count+'pt');
+  //   div.style('display','inline');
+  // }
 }
 
 
