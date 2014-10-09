@@ -14,7 +14,6 @@ function setup() {
   // This will hold every word and its count
   concordance = new Concordance();
 
-
   // Just loading from a file for simplicity
   var stuff = loadStrings('data/hamlet.txt', process);
 }

@@ -16,6 +16,14 @@ function setup() {
   loadJSON('data/data.json', process);
 }
 
+function makeDiv(word, count){
+  return function(){
+    var div = createDiv(word + ' ');
+    div.style('font-size',count+'pt');
+    div.style('display','inline');  
+  }
+}
+
 function process(data) {
   var keys = [];
   for (var word in data) {
@@ -31,12 +39,9 @@ function process(data) {
   for (var i = 0; i < keys.length; i++) {
     var word = keys[i];
     var count = data[word];
-    var div = createDiv(word + ' ');
-    div.style('font-size',count+'pt');
-    div.style('display','inline');  
+    //makeDiv(word,count)();
+    setTimeout(makeDiv(word,count), 1);
   }
-
-  console.log(Date.now() - now);
 }
 
 

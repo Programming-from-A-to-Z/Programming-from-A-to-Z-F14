@@ -24,7 +24,7 @@ function Concordance() {
     return function(){
       conc.increment(token);
     }
-}
+  }
 
   // Process new text
   this.process = function(data) {

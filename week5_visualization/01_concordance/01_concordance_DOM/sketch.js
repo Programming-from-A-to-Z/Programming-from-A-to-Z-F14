@@ -23,6 +23,14 @@ function setup() {
   var stuff = loadStrings('data/hamlet.txt', process);
 }
 
+function makeDiv(word, count){
+  return function(){
+    var div = createDiv(word + ' ');
+    div.style('font-size',count+'pt');
+    div.style('display','inline');  
+  }
+}
+
 function process(data) {
   var text;
 
@@ -46,11 +54,13 @@ function process(data) {
   // Get the count for each word and display
   for (var i = 0; i < keys.length; i++) {
     var count = concordance.getCount(keys[i]);
-    var div = createDiv(keys[i] + ' ');
-    //var sz = 10*floor(log(count));
-    var sz = count;
-    div.style('font-size',sz+'pt');
-    div.style('display','inline');  
+    //var div = createDiv(keys[i] + ' ');
+    var sz = 10*floor(log(count));
+    var sz = count/5;
+    setTimeout(makeDiv(keys[i],sz),1);
+    // var sz = count;
+    // div.style('font-size',sz+'pt');
+    // div.style('display','inline');  
   }
 
   console.log(Date.now() - now);
