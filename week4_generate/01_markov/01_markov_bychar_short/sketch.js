@@ -10,7 +10,7 @@ var generator;
 
 // Preload the seed data
 function preload() {
-  lines = loadStrings('data/itp.txt');
+  lines = loadStrings('data/church.txt');
 }
 
 
