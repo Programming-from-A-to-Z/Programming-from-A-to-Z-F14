@@ -64,9 +64,25 @@ function draw() {
     connections[i].display();
   }
   for (var i = 0; i < nodes.length; i++) {
+    nodes[i].dragIt(mouseX, mouseY);
     nodes[i].display();
   }
 }
+
+function mousePressed() {
+  for (var i = 0; i < nodes.length; i++) {
+    if (nodes[i].over(mouseX, mouseY)) {
+      nodes[i].setDrag(true);
+    }
+  }
+}
+
+function mouseReleased() {
+  for (var i = 0; i < nodes.length; i++) {
+    nodes[i].setDrag(false);
+  }
+}
+
 
 
 

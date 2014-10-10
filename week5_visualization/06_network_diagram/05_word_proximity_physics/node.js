@@ -11,10 +11,32 @@
 
 function Node(x,y,s) {
   this.p = new VerletParticle2D(x,y);
+  physics.addBehavior(new AttractionBehavior(this.p, 50, -1));
   physics.addParticle(this.p);
   this.word = s;
   this.w = textWidth(this.word) + 8;
   this.h = fs + 8;
+}
+
+Node.prototype.over = function(x,y) {
+  if (x > this.p.x-this.w/2 && x < this.p.x + this.w/2 && y > this.p.y-this.h/2 && y < this.p.y + this.h/2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+Node.prototype.setDrag = function(bool) {
+  this.drag = bool;
+}
+
+Node.prototype.dragIt = function(x,y) {
+  if (this.drag) {
+    this.p.lock();
+    this.p.x = x;
+    this.p.y = y;
+    this.p.unlock();
+  }
 }
 
 // Override the display method
@@ -32,7 +54,7 @@ Node.prototype.display = function(){
 
 
 function Connection(a, b) {
-  var s = new VerletSpring2D(a.p,b.p,200,0.5);
+  var s = new VerletSpring2D(a.p,b.p,100,0.1);
   physics.addSpring(s);
   this.from = a;
   this.to = b;

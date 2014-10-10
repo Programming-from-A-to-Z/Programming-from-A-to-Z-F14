@@ -18,6 +18,27 @@ function Node(x,y,s) {
   this.h = fs + 8;
 }
 
+Node.prototype.over = function(x,y) {
+  if (x > this.p.x-this.w/2 && x < this.p.x + this.w/2 && y > this.p.y-this.h/2 && y < this.p.y + this.h/2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+Node.prototype.setDrag = function(bool) {
+  this.drag = bool;
+}
+
+Node.prototype.dragIt = function(x,y) {
+  if (this.drag) {
+    this.p.lock();
+    this.p.x = x;
+    this.p.y = y;
+    this.p.unlock();
+  }
+}
+
 // Override the display method
 Node.prototype.display = function(){
   fill(127);

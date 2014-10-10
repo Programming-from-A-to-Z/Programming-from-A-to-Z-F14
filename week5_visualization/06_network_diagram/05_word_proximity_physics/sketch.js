@@ -38,7 +38,7 @@ function setup() {
     if (nodes.hasOwnProperty(word)) {
        n = nodes[word];
     } else {
-      var n = new Node(width/2+random(-2,2), height/2+random(-2,2), word);
+      var n = new Node(random(width),random(height), word);
       keys.push(word);
       nodes[word] = n;
     }
@@ -59,8 +59,25 @@ function draw() {
     connections[i].display();
   }
   for (var i = 0; i < keys.length; i++) {
-    var key = keys[i]
+    var key = keys[i];
+    nodes[key].dragIt(mouseX, mouseY);
     nodes[key].display();
+  }
+}
+
+function mousePressed() {
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    if (nodes[key].over(mouseX, mouseY)) {
+      nodes[key].setDrag(true);
+    }
+  }
+}
+
+function mouseReleased() {
+  for (var i = 0; i < keys.length; i++) {
+    var key = keys[i];
+    nodes[key].setDrag(false);
   }
 }
 
