@@ -10,8 +10,9 @@
 // inside the Node object, but inheritance is a nice alternative
 
 function Node(x,y,s) {
-  this.x = x;
-  this.y = y;
+  this.p = new VerletParticle2D(x,y);
+  physics.addParticle(this.p);
+  physics.addBehavior(new AttractionBehavior(this.p, 100, -1));
   this.word = s;
   this.w = textWidth(this.word) + 8;
   this.h = fs + 8;
@@ -19,7 +20,7 @@ function Node(x,y,s) {
 }
 
 Node.prototype.over = function(x,y) {
-  if (x > this.x-this.w/2 && x < this.x + this.w/2 && y > this.y-this.h/2 && y < this.y + this.h/2) {
+  if (x > this.p.x-this.w/2 && x < this.p.x + this.w/2 && y > this.p.y-this.h/2 && y < this.p.y + this.h/2) {
     return true;
   } else {
     return false;
@@ -32,32 +33,34 @@ Node.prototype.setDrag = function(bool) {
 
 Node.prototype.dragIt = function(x,y) {
   if (this.drag) {
-    this.x = x;
-    this.y = y;
+    this.p.lock();
+    this.p.x = x;
+    this.p.y = y;
+    this.p.unlock();
   }
 }
 
-// Override the display method
 Node.prototype.display = function(){
   fill(127);
   stroke(200);
-  if (this.drag) fill(255,0,0);
   strokeWeight(2);
   rectMode(CENTER);
-  rect(this.x,this.y, this.w, this.h);
+  rect(this.p.x,this.p.y, this.w, this.h);
   textAlign(CENTER);
   fill(255);
   noStroke();
-  text(this.word, this.x, this.y + this.h/4);
+  text(this.word, this.p.x, this.p.y + this.h/4);
 }
 
 
-function Connection(a, b) {
+function Connection(a, b, len) {
+  var s = new VerletSpring2D(a.p,b.p,len,0.01);
+  physics.addSpring(s);
   this.from = a;
   this.to = b;
 }
 
 Connection.prototype.display = function() {
   stroke(255);
-  line(this.from.x, this.from.y, this.to.x, this.to.y);
+  line(this.from.p.x, this.from.p.y, this.to.p.x, this.to.p.y);
 }
