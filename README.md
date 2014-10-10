@@ -167,11 +167,48 @@ This course focuses on programming strategies and techniques behind procedural a
     * Build a grammar based on a source text [as demonstrated here](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week4_generate/02_cfg/04_grammar_maker/grammarmaker.js).  
 
 ## Week 5 - Text Visualization - Oct 10
-* word clouds
-* text on curves
-* canvas vs DOM
+### Week 5 Notes (coming soon)
+* Basics of drawing text in canvas
+* Basics of drawing text using DOM elements
+* Animating text (canvas / DOM)
+* Drawing text character by character (curves, paths)
+* Text and physics
+* Classic text diagrams
+   * word clouds
+   * treemaps
+   * network diagrams
+* Pulling text and metadata from APIs
 
-## Week 6 - Bonus Topics - Oct 17
+### Examples
+* [Text display basics](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/00_basics)
+* [More with canvas](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/01_canvas_drawingtext)
+* [More with DOM](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/02_DOM_drawingtext)
+* [Boxfitting](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/04_boxfitting)
+* [Treemap](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/05_treemap)
+* [Network diagram](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/06_network_diagram)
+* [Physics](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/07_physics)
+* [APIs](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week5_visualization/08_APIs/)
+
+### Resources
+* [Stefanie Posavec](http://www.stefanieposavec.co.uk/-everything-in-between/)
+* [Textarc by Bradford Paley](http://www.textarc.org/)
+* [Ariel Malka](http://chronotext.org/)
+* [OpenBible](http://www.openbible.info/blog/2011/10/applying-sentiment-analysis-to-the-bible/)
+* [State of the Union, NY Times](http://www.nytimes.com/ref/washington/20070123_STATEOFUNION.html)
+* [On the Origin of Species: The Preservation of Favoured Traces, Ben Fry](http://fathom.info/traces)
+* [Office of Creative Research](http://o-c-r.org/work/)
+* [Jeff Clark](http://neoformix.com/2013/NovelViews.html)
+* Jonathan Corum, [word incidence](http://style.org/lyrics/)
+* Lynn Cherny, [talk](https://www.youtube.com/watch?v=f41U936WqPM) [pinterest](http://www.pinterest.com/arnicas/textvis/)
+* [Matthew Jockers](http://www.matthewjockers.net/)
+* [wordle algorithm](http://static.mrfeinberg.com/bv_ch03.pdf)
+* [SoSoLimited Reconstitution 2008](http://www.sosolimited.com/work/reconstitution-2008/)
+* [Rob Seward Word Association](http://robseward.com/blog/2009/02/23/word-association-apps/)
+
+### Assignment
+* TBA (final project proposal + first pass at something working)
+
+## Week 6 - Bonus Topics and Final Project Workshop - Oct 17
 * TBA
 
 ## Week 7 - Present Final Projects - Oct 30 -- 12:30 - 3:00 pm
