@@ -19,21 +19,33 @@ function setup() {
   var arclength = 0;
   // For every box
   for (var i = 0; i < message.length; i++) {
-    var theta = PI + arclength / r;
 
+    // The character and its width
     var currentChar = message.charAt(i);
+    if (currentChar === ' ') {
+      currentChar = '&nbsp;';
+    }
     var div = createDiv(currentChar);
     div.style('font-size', '32pt');
+    // Some position just to get the width
+    div.position(0,0);
+    var w = div.elt.offsetWidth;
+
+    // Each box is centered so we move half the width
+    arclength += w/2;
+    var theta = PI + arclength / r;
     div.position(windowWidth/2+r*cos(theta), windowHeight/2+r*sin(theta));
 
-    var w = div.elt.offsetWidth;
+    // Set the transformation
     div.style('line-height','32px');
     div.elt.style.height = '32px';
-
     var angle = 90 + floor(degrees(theta));
-    //div.style('background-color','#999999');
+    div.style('background-color','#EEEEEE');
+    div.style('opacity','0.6');
     div.style('transform','rotate('+angle+'deg)');
-    arclength += w;
+    
+    // Move halfway again
+    arclength += w/2;
   }
 
 
