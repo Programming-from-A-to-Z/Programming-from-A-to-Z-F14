@@ -4,13 +4,23 @@
 
 // An array of lines from a text file
 var lines;
+
+// This will be the full text
 var frankenstein;
+
+// A counter to check the characters
 var counter = 0;
+
+// This is the output text
 var output;
+
+// We'll accumulate all the text here
 var typed = '';
+
+// A sound 
 var typeSound;
 
-// Preload some seed data
+// Preload text and sound
 function preload() {
   typeSound = loadSound('data/typewriter-1.mp3');
   lines = loadStrings('data/frankenstein.txt');
@@ -23,12 +33,22 @@ function setup() {
 
   // Make the output element
   output = createP('');
+
+  // Play the sound
   typeSound.loop();
+
+  // No canvas
   noCanvas();
 }
 
 function draw() {
+  // Build up the string character by character
   typed += frankenstein.charAt(counter);
+  // Place the text in the DOM
   output.html(typed)
-  counter++;
+
+  // Go to the next character
+  if (counter < frankenstein.length-1) {
+    counter++;
+  }
 }
