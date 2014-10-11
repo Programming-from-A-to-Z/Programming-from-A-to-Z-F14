@@ -32,7 +32,7 @@ function preload() {
 function setup() {
   // Join everything together in one long string
   // Keep carriage returns so these will show up in the markov generator
-  frankenstein = lines.join('<br/>');
+  frankenstein = lines.join('\n');
 
   // Make the output element
   output = createDiv('');
