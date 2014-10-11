@@ -1,10 +1,17 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
 
 
 function setup() {
   noCanvas();
+
+  // Not drawing to canvas but making DIVs
+
+  // Alignment with CSS
   var div1 = createDiv('This text is centered');
   div1.style('font-size','16pt');
   div1.style('font-family','Times');

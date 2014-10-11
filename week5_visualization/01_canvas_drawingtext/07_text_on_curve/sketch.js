@@ -1,6 +1,9 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
 
 // Example 17-8: Characters along a curve 
 

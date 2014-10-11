@@ -1,8 +1,11 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// Example 17-1: Simple displaying text
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
+
+// Example 17-2: Text aligment
 
 function setup() {
   createCanvas(800, 480);

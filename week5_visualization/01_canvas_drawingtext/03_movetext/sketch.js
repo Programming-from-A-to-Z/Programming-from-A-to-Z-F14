@@ -1,18 +1,25 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// Example 17-5: Rotating text 
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
+
+// An array of text
 var headlines = [
   "Some headline", 
   "Another headline",
 ];
+
+// Which element of the array
 var index = 0;
 
+// x value for text location
 var x;
 
 function setup() {
   createCanvas(640, 480);
+  // Start text on left edge
   x = width;
 } 
 

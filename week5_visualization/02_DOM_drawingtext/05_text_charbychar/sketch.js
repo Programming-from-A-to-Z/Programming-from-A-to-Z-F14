@@ -1,6 +1,9 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
 
 // Example 17-6: Text breaking up 
 
@@ -47,12 +50,14 @@ function Letter(x_, y_, letter_) {
   this.x = x_;
   this.y = y_;
   this.letter = letter_;
-
+  
+  // Each letter is a div with absolute positioning
   this.div = createDiv(this.letter);
   this.div.position(this.x, this.y);
   this.div.style('font-family','Georgia');
   this.div.style('font-size', '64pt');
 
+  // What is the width of this Letter
   this.getWidth = function() {
     return this.div.elt.offsetWidth;
   }
@@ -61,6 +66,8 @@ function Letter(x_, y_, letter_) {
   this.shake = function() {
     this.x += random(-2,2);
     this.y += random(-2,2);
+
+    // If it moves update the position
     this.div.position(this.x, this.y);
   }
   
@@ -68,6 +75,8 @@ function Letter(x_, y_, letter_) {
   this.home = function() { 
     this.x = lerp(this.x, this.homex, 0.1);
     this.y = lerp(this.y, this.homey, 0.1);
+
+    // If it moves update the position
     this.div.position(this.x, this.y);
   }
 }

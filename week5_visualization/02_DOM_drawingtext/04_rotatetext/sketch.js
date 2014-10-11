@@ -1,6 +1,9 @@
-// Learning Processing
 // Daniel Shiffman
-// http://www.learningprocessing.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// Ported from Learning Processing
+// https://github.com/shiffman/LearningProcessing
 
 // Example 17-5: Rotating text 
 
@@ -9,6 +12,8 @@ var angle = 0;
 
 function setup() {
   noCanvas();
+
+  // A div instead of canvas
   div = createDiv(message);
   div.style('font-size','64pt');
   // In order to know the width of this div, I have to first give it an absolute position
@@ -20,6 +25,10 @@ function setup() {
 } 
 
 function draw() {
+
+  // Using a CSS transform
   div.style('transform','rotate('+angle+'deg)');
+
+  // The angle is in degrees!
   angle++;
 }
