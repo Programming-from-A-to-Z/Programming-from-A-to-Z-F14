@@ -1,19 +1,19 @@
-
+// Daniel Shiffman
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
 // Basics of drawing text in canvas
 
 var slider;
 
 function setup() {
+  // Make a canvas and a slider
   createCanvas(640, 480);
-
   slider = createSlider(4, 256, 64);
-
 } 
 
 function draw() {
   background(175);
-
 
   // You can use any available web font
   // If you want to use a font that isn't available by default add a link to your HTML header
@@ -38,11 +38,10 @@ function draw() {
   // Draw the text at an x/y
   text(s, 10, height/2 + 100);
 
-  
   // We can dynamically calulate the width of the text (and height)
+  // of a textbox using textWidth(), textAscent(), and textDescent()
   noStroke();
   fill(0,50);
-
   var w = textWidth(s);
   var h = textAscent() - textDescent();
   rect(10, height/2 + 100 - h, w, h);
