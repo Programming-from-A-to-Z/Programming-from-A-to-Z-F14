@@ -2,8 +2,14 @@
 // Programming from A to Z, Fall 2014
 // https://github.com/shiffman/Programming-from-A-to-Z-F14
 
+
+// Visualization ported from Jer Thorp's Data Art
+// https://github.com/blprnt/dataart
+
+// A corcordance object
 var concordance;
 
+// Lines of text
 var lines;
 
 var left = 0;
@@ -15,6 +21,7 @@ function preload() {
   
 function setup() {
   
+  // Full screen canvas
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
 
@@ -22,6 +29,7 @@ function setup() {
   // This will hold every word and its count
   concordance = new Concordance();
 
+  // join together with spaces
   var text = lines.join(' ');
   
   // Process this data
@@ -53,8 +61,8 @@ function renderWords() {
     var count = concordance.getCount(word);
     var x = i * 50;
     var y = 300;
+
     var s = sqrt(count) * 5;
-    
     
     fill(255,100);
     textSize(s);
