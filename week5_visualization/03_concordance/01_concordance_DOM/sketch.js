@@ -2,38 +2,38 @@
 // Programming from A to Z, Fall 2014
 // https://github.com/shiffman/Programming-from-A-to-Z-F14
 
+// This examples builds a very simple DOM visualization of concordance
 var concordance;
 
-
-var now;
-  
-function setup() {
+  function setup() {
   
   // No canvas
-  // Though doing something visual with this is a great idea for an assignment
   noCanvas();
-
 
   // Make a concordance object
   // This will hold every word and its count
   concordance = new Concordance();
 
-  now = Date.now();
   // Just loading from a file for simplicity
   var stuff = loadStrings('data/hamlet.txt', process);
 }
 
-function makeDiv(word, count){
+
+// A function that returns a function that makes a DIV
+// This is something that will make functions for callbacks later
+function makeDiv(word, fontsize){
   return function(){
     var div = createDiv(word + ' ');
-    div.style('font-size',count+'pt');
+    div.style('font-size',fontsize+'pt');
     div.style('display','inline');  
   }
 }
 
+// Processing the text
 function process(data) {
-  var text;
 
+  // Make the text all one thing
+  var text;
   // Did we get an array from loadStrings()
   // or just some raw text
   if (data instanceof Array) {
@@ -47,25 +47,28 @@ function process(data) {
   // Sort
   concordance.sortByCount();
 
-  //saveJSON(concordance.hash, 'data.json');
-
   // Get all the words
   var keys = concordance.getKeys();
+
   // Get the count for each word and display
   for (var i = 0; i < keys.length; i++) {
     var count = concordance.getCount(keys[i]);
-    //var div = createDiv(keys[i] + ' ');
+
+    // We could just make a DIV but this performs poorly
+    // var div = createDiv(keys[i] + ' ');
+    
+    // Showing how we can use logarithmic scale
     var sz = 10*floor(log(count));
-    var sz = count/5;
+    
+    // Or we can arbitrarily scale
+    // var sz = count/5;
+
+    // A better solution would be to normalize according to min / max counts
+
+    // Instead we use setTimeout with just one millisecond
+    // I have no idea why this is so much faster but it is
     setTimeout(makeDiv(keys[i],sz),1);
-    // var sz = count;
-    // div.style('font-size',sz+'pt');
-    // div.style('display','inline');  
   }
-
-  console.log(Date.now() - now);
-
-
 }
 
 

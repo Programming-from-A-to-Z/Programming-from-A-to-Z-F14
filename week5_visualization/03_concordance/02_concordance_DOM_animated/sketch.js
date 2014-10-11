@@ -2,6 +2,9 @@
 // Programming from A to Z, Fall 2014
 // https://github.com/shiffman/Programming-from-A-to-Z-F14
 
+// This examples builds a very simple DOM visualization of concordance
+// It reads the text one word a a time and animates the words growing according to their counts
+
 var concordance;
 
 function setup() {
@@ -28,19 +31,12 @@ function process(data) {
   } else {
     text = data;
   }
-  // Process this data
+
+  // We are actually going to make the DIVs inside the concordance object
+  // This is a bit problematic as its confusing to follow
+  // So would be good to refactor 
   concordance.process(text);
-  // Sort
-  // concordance.sortByCount();
-  // // Get all the words
-  // var keys = concordance.getKeys();
-  // // Get the count for each word and display
-  // for (var i = 0; i < keys.length; i++) {
-  //   var count = concordance.getCount(keys[i]);
-  //   var div = createDiv(keys[i] + ' ');
-  //   div.style('font-size',count+'pt');
-  //   div.style('display','inline');
-  // }
+
 }
 
 
