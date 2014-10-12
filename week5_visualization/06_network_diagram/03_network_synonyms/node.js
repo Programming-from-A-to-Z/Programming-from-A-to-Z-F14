@@ -49,7 +49,7 @@ function Node(x,y,s) {
 
   // Draw the node
   this.display = function(){
-    fill(127);
+    fill(255,127);
     stroke(200);
     // Red if being dragged
     if (this.drag) {
@@ -77,7 +77,7 @@ function Connection(a, b, len) {
   this.to = b;
 
   this.display = function() {
-    stroke(255);
+    stroke(255, 75);
     line(this.from.p.x, this.from.p.y, this.to.p.x, this.to.p.y);
   }
 }
