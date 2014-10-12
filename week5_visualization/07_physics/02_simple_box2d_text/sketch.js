@@ -1,7 +1,11 @@
-// The Nature of Code
 // Daniel Shiffman
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// This is from chapter 5
 // http://natureofcode.com
 
+// But now instead of rectangles is text
 
 // A reference to our box2d world
 var world;
@@ -11,29 +15,27 @@ var boundaries = [];
 // A list for all of our rectangles
 var boxes = [];
 
+// Random assortment of words
 var words = ['this','is','a','test'];
 
-var fs = 24;
-
-var width = 0;
-var height = 0;
+// Font size
+var fs = 16;
 
 function setup() {
-  noCanvas();
-  width = windowWidth;
-  height = windowHeight;
+  createCanvas(800,600);
 
   // Initialize box2d physics and create the world
   world = createWorld();
 
-  // Add a bunch of fixed boundaries
-  boundaries.push(new Boundary(width/2,height/2,100,50));
-  boundaries.push(new Boundary(width/4,height-50,width/2-50,10));
-  boundaries.push(new Boundary(3*width/4,height-150,width/2-50,10));
+  textSize(24);
 
+  // Add a bunch of fixed boundaries
+  boundaries.push(new Boundary(width/4,height-5,width/2-50,10));
+  boundaries.push(new Boundary(3*width/4,height-50,width/2-50,10));
 }
 
 function draw() {
+  background(51);
 
   // We must always step through time!
   var timeStep = 1.0/30;
@@ -47,11 +49,20 @@ function draw() {
     boxes.push(b);
   }
 
+  // Display all the boundaries
+  for (var i = 0; i < boundaries.length; i++) {
+    boundaries[i].display();
+  }
+
   // Display all the boxes
   for (var i = boxes.length-1; i >= 0; i--) {
-    boxes[i].update();
+    boxes[i].display();
     if (boxes[i].done()) {
       boxes.splice(i,1);
     }
   }
 }
+
+
+
+

@@ -1,13 +1,18 @@
-// The Nature of Code
 // Daniel Shiffman
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// This is from chapter 5
 // http://natureofcode.com
 
-// A rectangular box
-
+// But now instead of rectangles is text
 
 // Constructor
 function Box(x, y, s) {
+
+  // A box is made up of a String
   this.word = s;
+  // Get the width and height from the text info
   this.w = textWidth(s);
   this.h = fs;
 
@@ -70,6 +75,8 @@ Box.prototype.display = function() {
   // stroke(200);
   // strokeWeight(2);
   // rect(0, 0, this.w, this.h);
+
+  // Draw the text instead!
   fill(255);
   noStroke();
   textAlign(CENTER);

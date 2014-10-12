@@ -1,19 +1,23 @@
-// The Nature of Code
 // Daniel Shiffman
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// This is from chapter 5
 // http://natureofcode.com
 
-// A rectangular box
-
+// This Box is div!
 
 // Constructor
 function Box(x, y, s) {
   this.word = s;
-
+  
+  // Make a div to display the text!
   this.div = createDiv(s);
-  this.div.position(0,0);
+  this.div.position(x, y);
   this.div.style('font-size',fs+'px');
   //this.div.style('background-color','#AAAAAA');
   this.div.elt.style.height = fs+'px';
+  // Get the height and width
   this.w = this.div.elt.offsetWidth;
   this.h = fs;
 
@@ -67,7 +71,9 @@ Box.prototype.update = function() {
   var pos = scaleToPixels(this.body.GetPosition());
   // Get its angle of rotation
   var a = this.body.GetAngleRadians();
-  this.div.position(pos.x-this.w/2,pos.y-this.h/2);
+
+  // Updat the div's positon and rotation using CSS transforms!
+  this.div.position(pos.x-this.w/2, pos.y-this.h/2);
   var deg = floor(degrees(a));
   this.div.style('transform','rotate('+deg+'deg)');
 

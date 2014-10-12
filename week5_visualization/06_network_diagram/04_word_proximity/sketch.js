@@ -1,8 +1,10 @@
-// The Nature of Code
 // Daniel Shiffman
-// http://natureofcode.com
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
 
-// Reference to physics world
+// Based off of chapter 5 http://natureofcode.com examples
+
+// This example now connects words that are next to each other
 var physics;
 
 // A dictionary of words in the speech

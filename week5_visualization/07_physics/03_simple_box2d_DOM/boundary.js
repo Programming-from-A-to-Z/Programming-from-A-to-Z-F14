@@ -1,14 +1,17 @@
-// The Nature of Code
 // Daniel Shiffman
+// Programming from A to Z, Fall 2014
+// https://github.com/shiffman/Programming-from-A-to-Z-F14
+
+// This is from chapter 5
 // http://natureofcode.com
 
-// A fixed boundary class
+// This boundary is div!
 
-  // A boundary is a simple rectangle with x,y,width,and height
+
+// A boundary is a simple rectangle with x,y,width,and height
 function Boundary(x_,y_, w_, h_) {
-  // But we also have to make a body for box2d to know about it
-  // Body b;
 
+  // Some dimensions
   this.x = x_;
   this.y = y_;
   this.w = w_;
@@ -26,11 +29,11 @@ function Boundary(x_,y_, w_, h_) {
   fd.shape = new box2d.b2PolygonShape();
   fd.shape.SetAsBox(scaleToWorld(this.w/2), scaleToWorld(this.h/2));
   this.body = world.CreateBody(bd).CreateFixture(fd);
-
+  
+  // Whoa we're making a div now!
+  // If it was rotated we'd have to do some transforms
   this.div = createDiv('');
   this.div.position(this.x-this.w/2,this.y-this.h/2);
   this.div.size(this.w,this.h);
   this.div.style('background-color','#999999');
 }
-
-  // Draw the boundary, if it were at an angle we'd have to do something fancier
