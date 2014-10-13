@@ -167,13 +167,10 @@ This course focuses on programming strategies and techniques behind procedural a
     * Build a grammar based on a source text [as demonstrated here](https://github.com/shiffman/Programming-from-A-to-Z-F14/blob/master/week4_generate/02_cfg/04_grammar_maker/grammarmaker.js).  
 
 ## Week 5 - Text Visualization - Oct 10
-### Week 5 Notes (coming soon)
-* Basics of drawing text in canvas
-* Basics of drawing text using DOM elements
-* Animating text (canvas / DOM)
-* Drawing text character by character (curves, paths)
-* Text and physics
-* Classic text diagrams
+### [Week 5 Notes](http://shiffman.net/teaching/a2z/visualization)
+* [Drawing Text with Canvas](http://shiffman.net/teaching/a2z/visualization/#canvas)
+* [Drawing Text with DOM Elements](http://shiffman.net/teaching/a2z/visualization/#dom)
+* [Classic Text Visualization Techniques](http://shiffman.net/teaching/a2z/visualization/#classic)
    * word clouds
    * treemaps
    * network diagrams
@@ -206,7 +203,7 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Rob Seward Word Association](http://robseward.com/blog/2009/02/23/word-association-apps/)
 
 ### Assignment
-* TBA (final project proposal + first pass at something working)
+* Create a final project proposal.  [Add a link to the wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Final-Project-Proposal).
 
 ## Week 6 - Bonus Topics and Final Project Workshop - Oct 17
 * TBA
