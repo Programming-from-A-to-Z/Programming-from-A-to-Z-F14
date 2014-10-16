@@ -17,17 +17,18 @@ function searchIt(word) {
       record.word = word;
       record.count = 1;
       concordance.add(record);
-      console.log('New count for ' + word + ': ' + num);
+      console.log('New word! ' + word + ': ' + 1);
     } else {
       var record = data[0]; // Assume it's the first record
       var num = data[0].count + 1;
       var id = data[0]._id;
-      concordance.update({_id: id}, {$set: {count: num}}, {});  
+      // concordance.update({_id: id}, {$set: {count: num}}, {});  
       console.log('New count for ' + word + ': ' + num);
       // concordance.change(id, {count: num});
     }
   }
 }
+
 
 
 function saveData(request) {
@@ -38,9 +39,11 @@ function saveData(request) {
   var txt = request.fields.txt;
   var tokens = txt.split(/\W+/);  
   for (var i = 0; i < tokens.length; i++) {
-    concordance.search('word', tokens[i], searchIt(tokens[i]));
+    var word = tokens[i]; 
+    concordance.search('word', tokens[i], searchIt(tokens[i])); 
   }
-  request.respond('finished');
+  //request.respond('finished');
+  request.redirect('/');
   //names.add(data);
   //request.respond('Thanks your data was saved:' + data.name + ',' + data.num);
 }
