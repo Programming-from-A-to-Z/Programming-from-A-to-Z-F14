@@ -3,10 +3,10 @@ var app = new servi(true);
 
 var Twit = require('twit');
 var T = new Twit({
-  consumer_key:         'NoHVG58q9xCW4pnfhWNCRYVMm', 
-  consumer_secret:      'HoVfSTD7xM8ev7kzHzxrkGX89g730NZZpKuMZ8o07sVi1e31MQ',
-  access_token:         '2799041194-T57H5oIei64ZOzEUA10r4zrwEYRqJgUpLpCRcjt',
-  access_token_secret:  'm1mjy9EfCy8BfNA4IVAQwAv1UWsp0WmmRbzhJ4QCzNCNX'
+  consumer_key:         '_', 
+  consumer_secret:      '_',
+  access_token:         '_',
+  access_token_secret:  '_'
 });
 
 port(8080);
