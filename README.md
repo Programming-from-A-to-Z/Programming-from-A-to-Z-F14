@@ -205,8 +205,25 @@ This course focuses on programming strategies and techniques behind procedural a
 ### Assignment
 * Create a final project proposal.  [Add a link to the wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Final-Project-Proposal).  
 
-## Week 6 - Bonus Topics and Final Project Workshop - Oct 17
-* TBA
+## Week 6 - APIs - Oct 17
+* Pulling data from APIs
+    * [Some notes from creativeJS](https://github.com/lmccart/itp-creative-js/wiki/Week-4)
+    * API examples:
+        * [Instagram p5.js example](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/01_instagram), [Instagram API docs](http://instagram.com/developer/)
+        * [NY Times p5.js examples](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/03_nytimes), [NY Times API docs](http://developer.nytimes.com/docs)
+        * [Wikipedia p5.js examples](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/04_wikipedia), [Wikipedia API docs](http://www.mediawiki.org/wiki/API:Main_page)
+* Making your own API
+    * [Server side programming with Servi](https://github.com/antiboredom/servi.js/wiki)
+    * [Code examples](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/05_servi_makeyourownAPI)
+    * [Nodemon](https://github.com/remy/nodemon)
+    * Deploying your app: [notes from Shawn's Network Media using Digital Ocean](http://itp.nyu.edu/~sve204/commlabnetworkedmedia_fall2014/week1.html)
+* Combining the two!
+    * [OAuth](http://en.wikipedia.org/wiki/OAuth)
+    * [Twitter API docs](https://dev.twitter.com/overview/documentation)
+    * [Twit Node module](https://github.com/ttezel/twit)
+    * [Example using servi.sj and p5 to search and post tweets](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/06_twitter_horrors_of_oauth)
+### Assignment
+* Complete final project and be ready to present in next class (note the date/time).
 
 ## Week 7 - Present Final Projects - Oct 30 -- 12:30 - 3:00 pm
 * ***NOTE THE NEW DATE FOR THIS FINAL CLASS Oct 30 -- 12:30 - 3:00 pm Room TBA***
