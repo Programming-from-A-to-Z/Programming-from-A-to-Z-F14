@@ -16,11 +16,12 @@ function searchIt(word) {
       record.word = word;
       record.count = 1;
       concordance.add(record);
-      // console.log('New word! ' + word + ': ' + 1);
+      console.log('New word! ' + word + ': ' + 1);
     } else {
       var record = data[0]; // Assume it's the first record
       var num = data[0].count + 1;
       var id = data[0]._id;
+      console.log('Old word! ' + word + ': ' + num);
       // concordance.change(id, {count: num});
       concordance.db.update({_id: id}, {$set: {count: num}}, {});  
     }
@@ -44,7 +45,7 @@ function saveData(request) {
 route('/json', jsonData);
 
 function jsonData(request) {
-  concordance.getAll(gotData);
+  concordance.getAll(gotData,{count: -1});
   function gotData(data) {
     var output = JSON.stringify(data);
     request.respond(output);

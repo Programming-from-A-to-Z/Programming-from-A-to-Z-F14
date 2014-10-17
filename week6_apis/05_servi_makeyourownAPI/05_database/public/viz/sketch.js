@@ -1,8 +1,9 @@
 
 
 var data;
+
 function preload() {
-  data = loadJSON('json')
+  data = loadJSON('/json')
 }
 
 function setup() {
@@ -10,8 +11,6 @@ function setup() {
   for (var i = 0; i < data.length; i++) {
     createP(data[i].name + ',' + data[i].num);
   }
-
-
 }
 
 function draw() {

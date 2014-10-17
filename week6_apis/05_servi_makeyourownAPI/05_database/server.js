@@ -11,6 +11,8 @@ route('/save', saveData);
 
 route('/save/:name/:num', saveData);
 
+route('/json', jsonAPI);
+
 function saveData(request) {
   // Query String
   var data = {
@@ -33,6 +35,14 @@ function showData(request) {
       output += data[i].name + ' ' + data[i].num + '<br/>';
     }
     request.respond(output);
+  }
+}
+
+function jsonAPI(request) {
+  names.getAll(gotData);
+
+  function gotData(data) {
+    request.respond(JSON.stringify(data));
   }
 }
 
