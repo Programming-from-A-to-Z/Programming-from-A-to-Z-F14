@@ -26,8 +26,9 @@ route('/save', saveData);
 
 // This makes a callback that adds a new record to the database
 // Or updates an existing one
-function searchIt(word) {
-  return function(data) {
+function searchIt(word, wait) {
+  concordance.search('word', word, searchComplete);  
+  function searchComplete(data) {
     // If it's a new word
     if (data.length === 0) {
       // Add it to the database
@@ -48,13 +49,22 @@ function searchIt(word) {
       // This feature for updating a database record is in progress
       // The syntax looks weird and someday it will be simpler
       // concordance.change(id, {count: num});
-      concordance.db.update({_id: id}, {$set: {count: num}}, {}); 
-
+      // concordance.db.update({_id: id}, {$set: {count: num}}, {}); 
+      concordance.db.update({_id: id}, {$inc: {count: 1}}, {}); 
+      
       // Some debugging
       console.log('Old word! ' + word + ': ' + num);
     }
   }
 }
+
+// function timeit(wait, id, word, num) {
+//   setTimeout(function() {
+//     concordance.db.update({_id: id}, {$inc: {count: 1}}, {}); 
+//     console.log('Old word! ' + word + ': ' + num);
+
+//   }, wait);
+// }
 
 // Handle saving data
 function saveData(request) {
@@ -71,7 +81,7 @@ function saveData(request) {
   var tokens = txt.split(/\W+/);  
   for (var i = 0; i < tokens.length; i++) {
     // And add it or update it in the database
-    concordance.search('word', tokens[i], searchIt(tokens[i])); 
+    searchIt(tokens[i],i*1000);
   }
 
   // Send back to the page again
