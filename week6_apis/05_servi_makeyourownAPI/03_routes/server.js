@@ -5,7 +5,8 @@
 // Thanks Sam Lavigne and Shawn Van Every
 // https://github.com/antiboredom/servi.js/wiki
 
-// Use servi
+// Use servi 
+// npm install servi
 var servi = require('servi');
 // Make an app
 var app = new servi(true);

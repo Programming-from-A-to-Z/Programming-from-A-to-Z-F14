@@ -6,6 +6,7 @@
 // https://github.com/antiboredom/servi.js/wiki
 
 // Use servi
+// npm install servi
 var servi = require('servi');
 // Make an app
 var app = new servi(true);
@@ -13,6 +14,7 @@ var app = new servi(true);
 port(8080);
 
 // Create an Twitter object to connect to Twitter API
+// npm install twit
 var Twit = require('twit');
 var T = new Twit({
   consumer_key:         '_', 

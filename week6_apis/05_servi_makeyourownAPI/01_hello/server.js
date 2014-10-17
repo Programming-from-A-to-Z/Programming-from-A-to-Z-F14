@@ -6,6 +6,7 @@
 // https://github.com/antiboredom/servi.js/wiki
 
 // Use servi
+// npm install servi
 var servi = require('servi');
 // Make an app
 var app = new servi(true);
