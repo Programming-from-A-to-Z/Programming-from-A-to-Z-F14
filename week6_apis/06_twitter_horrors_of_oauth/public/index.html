@@ -4,5 +4,29 @@
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
 </head>
 
+<style>
+
+.apiquery {
+  margin: 0 0 20 0;
+}
+</style>
+
+
+
 <body>
+
+  <div class = 'apiquery'>
+    <div class ='info'>Search for tweets:</div>
+    <input id='searchInput' value = 'JavaScript'></input>
+    <button id = 'searchButton'>Search!</button>
+  </div>
+
+  <div class = 'apiquery'>
+    <div class ='info'>Tweet this:</div>
+    <input id='postInput' value = 'A test tweet.' onKeyDown='countChars();' size='50'></input>
+    <button id = 'postButton'>Tweet!</button>
+    <div id='numchars' style='display:inline'></div>
+  </div>
+
+
 </body>

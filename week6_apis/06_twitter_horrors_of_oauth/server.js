@@ -15,14 +15,39 @@ serveFiles("public");
 
 // var names = useDatabase("tweets");
 
-route('/tweets', getTweets);
+route('/tweets', error);
+
+function error(request) {
+  var error = {
+    error: 'you forgot to specify a query'
+  };
+  request.respond(JSON.stringify(error));
+}
+
+route('/tweets/:query', getTweets);
 
 function getTweets(request) {
-  T.get('search/tweets', { q: 'JavaScript', count: 10 }, function(err, data, response) {
+  console.log(request.params);
+  var query = request.params.query;
+  T.get('search/tweets', { q: query, count: 10 }, function(err, data, response) {
     var tweets = data.statuses;
     console.log('Got ' + tweets.length + ' tweets.');
-    request.respond(JSON.stringify(tweets));
+    request.respond(JSON.stringify(tweets, undefined, 2));
   });  
+}
+
+route('/tweet', postTweet)
+
+function postTweet(request) {
+  var statement = request.params.status;
+  T.post('statuses/update', { status: statement}, function(err, reply) {
+    if (err !== null) {
+      request.respond(JSON.stringify(err));
+    } else {
+      request.respond(JSON.stringify(reply));
+    }
+  });
+
 }
 
 start();
