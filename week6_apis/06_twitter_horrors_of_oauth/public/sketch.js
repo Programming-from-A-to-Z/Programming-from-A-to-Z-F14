@@ -40,12 +40,15 @@ function postTweet() {
 
 function tweeted(data) {
   console.log(data);
+  var p;
   if (data.message) {
-    createP('Error! ' + data.message);
+    p = createP('Error! ' + data.message);
   } else if (data.text) {
-    createP('Success I tweeted: ' + data.text);
+    p = createP('Success I tweeted: ' + data.text);
   } else {
-    createP('Unknown error! ');
+    p = createP('Unknown error! ');
   }
+  p.style('background','#F660AB')
+  p.style('padding','16px');
 }
 
