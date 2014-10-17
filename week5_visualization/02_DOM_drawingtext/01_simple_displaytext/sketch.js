@@ -14,5 +14,5 @@ function setup() {
   var div = createDiv('Strings!');
   // Size and color
   div.style('font-size','16pt');
-  div.style('font-color','#AAAAAA');
+  div.style('color','#AAAAAA');
 } 

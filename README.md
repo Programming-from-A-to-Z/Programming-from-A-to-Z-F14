@@ -203,7 +203,7 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Rob Seward Word Association](http://robseward.com/blog/2009/02/23/word-association-apps/)
 
 ### Assignment
-* Create a final project proposal.  [Add a link to the wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Final-Project-Proposal).
+* Create a final project proposal.  [Add a link to the wiki](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Final-Project-Proposal).  
 
 ## Week 6 - Bonus Topics and Final Project Workshop - Oct 17
 * TBA

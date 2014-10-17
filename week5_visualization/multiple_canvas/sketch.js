@@ -39,6 +39,7 @@ var s2 = function( sketch ) {
   var y = 100;
 
   sketch.setup = function() {
+    //sketch.noCanvas();
     sketch.createCanvas(200, 200);
   };
 
