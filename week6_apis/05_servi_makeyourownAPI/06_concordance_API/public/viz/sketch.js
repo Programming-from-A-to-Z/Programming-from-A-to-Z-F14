@@ -3,8 +3,7 @@
 // https://github.com/shiffman/Programming-from-A-to-Z-F14
 
 // This examples builds a very simple DOM visualization of concordance
-// With preprocessed JSON data
-var concordance;
+// With data with get from our own API!
 
 function setup() {
   

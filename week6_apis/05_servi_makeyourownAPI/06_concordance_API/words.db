@@ -203,7 +203,7 @@
 {"word":"speak","count":1,"_id":"f4AqYtDgvEGKMNvF"}
 {"word":"Ghost","count":1,"_id":"fM1x8OPjZihOcu5s"}
 {"word":"it","count":1,"_id":"fXreVaeVuOzpOlbQ"}
-{"word":"test","count":11,"_id":"faPUYnXapQI1ZKer"}
+{"word":"test","count":16,"_id":"faPUYnXapQI1ZKer"}
 {"word":"of","count":1,"_id":"fg7lxjD8OX8lk5zz"}
 {"word":"eyes","count":1,"_id":"fqwRBmDIE3gjZU2Z"}
 {"word":"Stay","count":1,"_id":"frMuq3VEwzi0P8zm"}
@@ -251,6 +251,7 @@
 {"word":"thee","count":1,"_id":"ozmrDyjWkydiIO6M"}
 {"word":"Hor","count":1,"_id":"pJhZs1tyj9LDGPE3"}
 {"word":"my","count":1,"_id":"pvD8xLZD1o1a0E5W"}
+{"word":"help","count":4,"_id":"px41zyXIFnBn6fHc"}
 {"word":"fantasy","count":1,"_id":"q8MJa7QQCwdFPbDR"}
 {"word":"Of","count":1,"_id":"qiBQ1XWCjlBPv1v7"}
 {"word":"form","count":1,"_id":"qjl4ITYkk7ysX5SQ"}
@@ -301,12 +302,4 @@
 {"word":"Bernardo","count":1,"_id":"zOkssuXPtyqMknil"}
 {"word":"t","count":1,"_id":"zRYlgvBlETISE7AC"}
 {"word":"the","count":1,"_id":"zpAzpVNGrMD8Bjld"}
-{"word":"help","count":1,"_id":"px41zyXIFnBn6fHc"}
-{"word":"test","count":12,"_id":"faPUYnXapQI1ZKer"}
-{"word":"test","count":13,"_id":"faPUYnXapQI1ZKer"}
-{"word":"test","count":14,"_id":"faPUYnXapQI1ZKer"}
-{"word":"test","count":15,"_id":"faPUYnXapQI1ZKer"}
-{"word":"test","count":16,"_id":"faPUYnXapQI1ZKer"}
-{"word":"help","count":2,"_id":"px41zyXIFnBn6fHc"}
-{"word":"help","count":3,"_id":"px41zyXIFnBn6fHc"}
-{"word":"help","count":4,"_id":"px41zyXIFnBn6fHc"}
+{"word":"test","count":17,"_id":"faPUYnXapQI1ZKer"}

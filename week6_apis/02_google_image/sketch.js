@@ -8,6 +8,7 @@
 // Some words
 var s = 'cat dog frog deer';
 
+// A bunch of divs
 var divs = [];
 
 function setup() {
@@ -15,6 +16,7 @@ function setup() {
 
   // Split up the words
   var words = s.split(/\W+/);
+
   // Make each word a link
   for (var i = 0; i < words.length; i++) {
     var a = createA('#',words[i]);
