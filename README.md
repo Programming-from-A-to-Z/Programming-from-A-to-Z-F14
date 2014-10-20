@@ -222,8 +222,9 @@ This course focuses on programming strategies and techniques behind procedural a
     * [Twitter API docs](https://dev.twitter.com/overview/documentation)
     * [Twit Node module](https://github.com/ttezel/twit)
     * [Example using servi.sj and p5 to search and post tweets](https://github.com/shiffman/Programming-from-A-to-Z-F14/tree/master/week6_apis/06_twitter_horrors_of_oauth)
+
 ### Assignment
-* Complete final project and be ready to present in next class (note the date/time).
+* Prepare final project and documentation [as described here](https://github.com/shiffman/Programming-from-A-to-Z-F14/wiki/Final-Project).  Plan on 5 minutes (with 1-2 minutes of questions) for presenting.
 
 ## Week 7 - Present Final Projects - Oct 30 -- 12:30 - 3:00 pm
 * ***NOTE THE NEW DATE FOR THIS FINAL CLASS Oct 30 -- 12:30 - 3:00 pm Room TBA***
