@@ -30,6 +30,7 @@ ContextFree.prototype.add_rule = function(rule, expansion) {
 // This function recursively calls itself 
 // over and over until it reaches a terminal
 ContextFree.prototype.expand = function(start, expansion) {
+  console.log(start);
   if (this.rules.hasOwnProperty(start)) {
     // Grab one possible expansion
     var possible_expansions = this.rules[start];
@@ -50,8 +51,10 @@ ContextFree.prototype.expand = function(start, expansion) {
 ContextFree.prototype.get_expansion = function(axiom) {
   // Start with an empty array
   var expansion = [];
+  console.log(expansion);
   // Call the expand function
   this.expand(axiom, expansion);
+  console.log(expansion);
   // Send back a String (rather than array)
   return expansion.join(' ');  
 }
