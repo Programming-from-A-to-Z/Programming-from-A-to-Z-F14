@@ -5,7 +5,7 @@
 // An object to store all the info related to a concordance
 
 function Concordance() {
-  this.hash = {};
+  this.dict = {};
   this.keys = [];
   
 
@@ -41,18 +41,18 @@ function Concordance() {
   
   // Get the count for a word
   this.getCount = function(word) {
-    return this.hash[word];
+    return this.dict[word];
   }
   
   // Increment the count for a word
   this.increment = function(word) {
     // Is this a new word?
-    if (this.hash[word] == undefined) {
-      this.hash[word] = 1;
+    if (this.dict[word] == undefined) {
+      this.dict[word] = 1;
       this.keys.push(word);
     // Otherwise just increment its count
     } else {
-      this.hash[word]++;
+      this.dict[word]++;
     }
   }
   
@@ -60,9 +60,9 @@ function Concordance() {
   this.sortByCount = function() {
     // A fancy way to sort each element
     // Compare the counts
-    var dict = this;
+    var conc = this;
     this.keys.sort(function(a,b) {
-      return (dict.getCount(b) - dict.getCount(a));
+      return (conc.getCount(b) - conc.getCount(a));
     });
   }
 
